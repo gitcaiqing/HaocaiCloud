@@ -8,10 +8,10 @@
         <version>2.2.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.haocai.wxfront</groupId>
-    <artifactId>cloud-wxfront</artifactId>
+    <groupId>com.haocai.base</groupId>
+    <artifactId>cloud-base</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cloud-wxfront</name>
+    <name>cloud-base</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
