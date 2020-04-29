@@ -6,9 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-hfront/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-wxfront/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-base/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-ticketfront/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-eurekaserver/pom.xml" />
       </list>
     </option>
   </component>

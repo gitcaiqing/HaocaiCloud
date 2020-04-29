@@ -16,8 +16,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud-eurekaserver" target="1.8" />
       <module name="cloud-ticketserver" target="1.8" />
+      <module name="cloud-wxfront" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -25,7 +25,7 @@
       <module name="cloud-base" options="-parameters" />
       <module name="cloud-eurekaserver" options="" />
       <module name="cloud-hfront" options="-parameters" />
-      <module name="cloud-ticketfront" options="-parameters" />
+      <module name="cloud-ticketfront" options="" />
       <module name="cloud-ticketserver" options="-parameters" />
       <module name="cloud-wxfront" options="-parameters" />
     </option>
