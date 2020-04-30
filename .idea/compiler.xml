@@ -10,13 +10,13 @@
         <module name="cloud-eurekaserver" />
         <module name="cloud-ticketserver" />
         <module name="HaocaiCloud" />
-        <module name="cloud-ticketfeign" />
         <module name="cloud-wxfront" />
         <module name="cloud-base" />
         <module name="cloud-ticketfront" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-ticketfeign" target="1.8" />
       <module name="cloud-wxfront" target="1.8" />
     </bytecodeTargetLevel>
   </component>
