@@ -7,16 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-hfront" />
-        <module name="cloud-wxfront" />
         <module name="cloud-eurekaserver" />
-        <module name="HaocaiCloud" />
         <module name="cloud-ticketserver" />
+        <module name="HaocaiCloud" />
+        <module name="cloud-ticketfeign" />
+        <module name="cloud-wxfront" />
         <module name="cloud-base" />
         <module name="cloud-ticketfront" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cloud-ticketserver" target="1.8" />
       <module name="cloud-wxfront" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -25,8 +25,9 @@
       <module name="cloud-base" options="-parameters" />
       <module name="cloud-eurekaserver" options="" />
       <module name="cloud-hfront" options="-parameters" />
+      <module name="cloud-ticketfeign" options="" />
       <module name="cloud-ticketfront" options="" />
-      <module name="cloud-ticketserver" options="-parameters" />
+      <module name="cloud-ticketserver" options="" />
       <module name="cloud-wxfront" options="-parameters" />
     </option>
   </component>

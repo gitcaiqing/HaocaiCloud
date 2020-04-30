@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/cloud-base/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-ticketfront/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-ticketfeign/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-ticketserver/pom.xml" />
       </list>
     </option>
   </component>

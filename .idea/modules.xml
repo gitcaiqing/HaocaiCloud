@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/cloud-ticketserver/cloud-ticketserver.iml" filepath="$PROJECT_DIR$/cloud-ticketserver/cloud-ticketserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-wxfront/cloud-wxfront.iml" filepath="$PROJECT_DIR$/cloud-wxfront/cloud-wxfront.iml" />
     </modules>
   </component>
