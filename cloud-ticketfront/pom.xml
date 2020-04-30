@@ -79,12 +79,12 @@
         </dependency>-->
 
         <!--引入独立的feign服务jar包-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.haocai.feign</groupId>
             <artifactId>cloud-ticketfeign</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-            <!--  <scope>compile</scope>-->
-        </dependency>
+            &lt;!&ndash;  <scope>compile</scope>&ndash;&gt;
+        </dependency>-->
     </dependencies>
 
     <dependencyManagement>

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0cae832-3c5c-45c5-b6fe-fe9652bdaa1b" name="Default Changelist" comment="init2">
+    <list default="true" id="e0cae832-3c5c-45c5-b6fe-fe9652bdaa1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-ticketfront/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketfront/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="240">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#345#346#0" expanded="true" />
@@ -130,8 +133,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud-ticketfront/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
+            <state relative-caret-position="216">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/CloudTicketfeignApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+              <folding>
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,15 +254,15 @@
         <option value="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/service/TicketCategoryFeignService.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/feignservice/TicketCategoryFeignService.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/CloudTicketfrontApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketfeign/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/feignservice/CloudTicketfrontApplication.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/TicketCategoryFeignService.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/TicketCategoryFeignService.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/service/TicketCategoryFeignService.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/App.java" />
         <option value="$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/CloudTicketfeignApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketfront/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/cloud-ticketfront/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-ticketfeign/pom.xml" />
       </list>
     </option>
   </component>
@@ -285,52 +310,42 @@
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketfront" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketfront" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="cloudticketfeign" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -338,58 +353,27 @@
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfeign" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-ticketfront" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
               <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -487,6 +471,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CloudTicketfeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-ticketfeign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.haocai.feign.cloudticketfeign.CloudTicketfeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CloudTicketfrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-ticketfront" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.haocai.ticketfront.cloudticketfront.CloudTicketfrontApplication" />
@@ -508,6 +499,7 @@
       <item itemvalue="Spring Boot.CloudTicketserverApplication" />
       <item itemvalue="Spring Boot.CloudHfrontApplication" />
       <item itemvalue="Spring Boot.CloudBaseApplication" />
+      <item itemvalue="Spring Boot.CloudTicketfeignApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -528,7 +520,7 @@
       <workItem from="1587638730840" duration="3701000" />
       <workItem from="1587894925793" duration="3754000" />
       <workItem from="1587978436143" duration="17791000" />
-      <workItem from="1588210494780" duration="12342000" />
+      <workItem from="1588210494780" duration="13284000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1588075032705</created>
@@ -558,17 +550,24 @@
       <option name="project" value="LOCAL" />
       <updated>1588235918111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init2">
+      <created>1588236082072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588236082072</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37588000" />
+    <option name="totallyTimeSpent" value="38530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24360341" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -579,7 +578,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3530067" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15033408" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35523385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -622,7 +621,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java</url>
-          <line>28</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -853,13 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="66" column="24" selection-start-line="58" selection-start-column="12" selection-end-line="66" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -912,13 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/CloudTicketfrontApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -941,18 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/CloudTicketfeignApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/TicketCategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -965,14 +938,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="240">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#345#346#0" expanded="true" />
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#440#441#0" expanded="true" />
             <element signature="e#473#474#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-ticketfeign/src/main/java/com/haocai/feign/cloudticketfeign/CloudTicketfeignApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="9" column="71" lean-forward="true" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1028,7 +1026,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cloud-ticketfront</last-edited>
+          <last-edited>cloud-ticketfeign</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
