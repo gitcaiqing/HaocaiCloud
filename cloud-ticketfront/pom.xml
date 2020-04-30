@@ -72,16 +72,19 @@
         </dependency>
         <!-- jsp依赖jar包end -->
 
-        <dependency>
+        <!-- feign 业务在本系统引入此jar包-->
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-feign</artifactId>
-        </dependency>
+        </dependency>-->
 
-        <!-- <dependency>
-            <groupId>com.cloud</groupId>
-            <artifactId>SpringCloud-ServiceFeign</artifactId>
+        <!--引入独立的feign服务jar包-->
+        <dependency>
+            <groupId>com.haocai.feign</groupId>
+            <artifactId>cloud-ticketfeign</artifactId>
             <version>0.0.1-SNAPSHOT</version>
-        </dependency> -->
+            <!--  <scope>compile</scope>-->
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
