@@ -7,3 +7,8 @@ server:
 spring:
   application:
     name: cloud-ticketserver
+  #数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_haocaicloud?serverTimezone=UTC
+    username: root
+    password: 123456

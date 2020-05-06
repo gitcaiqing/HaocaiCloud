@@ -8,10 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-hfront" />
         <module name="cloud-eurekaserver" />
-        <module name="cloud-ticketserver" />
         <module name="HaocaiCloud" />
         <module name="cloud-ticketfeign" />
-        <module name="cloud-wxfront" />
+        <module name="cloud-ticketserver" />
         <module name="cloud-base" />
         <module name="cloud-ticketfront" />
       </profile>
@@ -25,7 +24,7 @@
       <module name="cloud-base" options="-parameters" />
       <module name="cloud-eurekaserver" options="" />
       <module name="cloud-hfront" options="-parameters" />
-      <module name="cloud-ticketfeign" options="-parameters" />
+      <module name="cloud-ticketfeign" options="" />
       <module name="cloud-ticketfront" options="" />
       <module name="cloud-ticketserver" options="" />
       <module name="cloud-wxfront" options="-parameters" />
