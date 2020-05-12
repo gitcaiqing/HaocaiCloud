@@ -1,6 +1,5 @@
 package com.haocai.ticketserver.cloudticketserver.mapper;
 
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.haocai.base.cloudbase.dto.TicketCategoryReqPage;
 import com.haocai.base.cloudbase.entity.TbTicketCategory;
