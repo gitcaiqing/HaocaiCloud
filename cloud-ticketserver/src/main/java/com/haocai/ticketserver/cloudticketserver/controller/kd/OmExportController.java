@@ -1,5 +1,6 @@
 package com.haocai.ticketserver.cloudticketserver.controller.kd;
 
+import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.ticketserver.cloudticketserver.service.OmExportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,24 +20,30 @@ public class OmExportController {
     private OmExportService omExportService;
 
     /**
-     * TODO
-     * @param dopsVersion 海豚版本
-     * @param ptType 所属项目类型
-     * @param pvVersion 所属项目版本
+     * http://localhost:8300/export?dolphinVersion=&projectType=KMAPSERVER&projectVersion=&zbType=&dataType=
+     * http://localhost:8300/export?dolphinVersion=2.2&projectType=KMAPSERVER&projectVersion=1.0&zbType=GCJ02&dataType=320000
+     * @param dolphinVersion 海豚版本
+     * @param projectType 所属项目类型
+     * @param projectVersion 所属项目版本
      * @param zbType 坐标类型
-     * @param dtType 数据类型
+     * @param dataType 数据类型
      * @return java.lang.String
      * @author CQ
      * @date 2020/5/12 19:59
      */
     @RequestMapping("/export")
     @ResponseBody
-    public String export(@RequestParam(required = false) String dopsVersion,
-                         @RequestParam(required = false) String ptType,
-                         @RequestParam(required = false) String pvVersion,
-                         @RequestParam(required = false) String zbType,
-                         @RequestParam(required = false) String dtType){
+    public String export(@RequestParam(required = false) String dolphinVersion,
+                                  @RequestParam(required = false) String projectType,
+                                  @RequestParam(required = false) String projectVersion,
+                                  @RequestParam(required = false) String zbType,
+                                  @RequestParam(required = false) String dataType){
+        return omExportService.listAllResource(dolphinVersion, projectType, projectVersion, zbType, dataType);
+    }
 
-        return omExportService.listAllResource(dopsVersion, ptType, pvVersion, zbType, dtType);
+    @RequestMapping("/validate")
+    @ResponseBody
+    public String validate(){
+        return omExportService.validate();
     }
 }

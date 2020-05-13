@@ -85,6 +85,24 @@
             <version>0.0.1-SNAPSHOT</version>
             &lt;!&ndash;  <scope>compile</scope>&ndash;&gt;
         </dependency>-->
+
+
+        <!-- shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.2.3</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

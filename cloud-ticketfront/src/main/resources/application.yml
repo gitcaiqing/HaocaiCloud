@@ -9,7 +9,7 @@ spring:
     name: cloud-ticketfront
   mvc:
     view:
-      prefix: /WEB-INF/jsp/
+      prefix: /WEB-INF/views/
       suffix: .jsp
 
 #  thymeleaf:

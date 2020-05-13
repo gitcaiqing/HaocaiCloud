@@ -12,11 +12,11 @@ public class TbOmExportHistory {
 
     private Long id;
     private String exportUuid;
-    private String dopsVersion;
-    private String ptType;
-    private String pvVersion;
+    private String dolphinVersion;
+    private String projectType;
+    private String projectVersion;
     private String zbType;
-    private String dtType;
+    private String dataType;
     private String exportContent;
     private String status;
     private String createdTime;

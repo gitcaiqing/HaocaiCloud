@@ -6,5 +6,7 @@ package com.haocai.ticketserver.cloudticketserver.service;
  * @Date 2020/5/12 18:31
  **/
 public interface OmExportService {
-    String listAllResource(String dopsVersion, String ptType, String pvVersion, String zbType, String dtType);
+    String listAllResource(String dolphinVersion, String projectType, String projectVersion, String zbType, String dataType);
+
+    String validate();
 }

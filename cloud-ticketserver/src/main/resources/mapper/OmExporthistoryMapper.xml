@@ -4,11 +4,11 @@
     <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.TbOmExportHistory" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="export_uuid" property="exportUuid" jdbcType="VARCHAR" />
-        <result column="dops_version" property="exportUuid" jdbcType="VARCHAR" />
-        <result column="pt_type" property="ptType" jdbcType="VARCHAR" />
-        <result column="pv_version" property="pvVersion" jdbcType="VARCHAR" />
+        <result column="dolphin_version" property="dolphinVersion" jdbcType="VARCHAR" />
+        <result column="project_type" property="projectType" jdbcType="VARCHAR" />
+        <result column="project_version" property="projectVersion" jdbcType="VARCHAR" />
         <result column="zb_type" property="zbType" jdbcType="VARCHAR" />
-        <result column="dt_type" property="dtType" jdbcType="VARCHAR" />
+        <result column="data_type" property="dataType" jdbcType="VARCHAR" />
         <result column="export_content" property="exportContent" jdbcType="VARCHAR" />
         <result column="status" property="status" jdbcType="VARCHAR" />
         <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
@@ -27,9 +27,62 @@
         where id = #{id,jdbcType=INTEGER}
     </select>
 
-
     <select id="listDeployPackageUrl" resultType="java.lang.String" >
         select pack_url
         from tb_om_deploypackage
+        where 1 = 1
+        <if test="dolphinVersion != null and dolphinVersion != ''">
+            and dolphin_version = #{dolphinVersion}
+        </if>
+        <if test="projectType != null and projectType != ''">
+            and project_type = #{projectType}
+        </if>
+        <if test="projectVersion != null and projectVersion != ''">
+            and project_version = #{projectVersion}
+        </if>
     </select>
+
+    <select id="listDeployFileUrl" resultType="java.lang.String" >
+        select file_url
+        from tb_om_deployfile
+        <if test="projectType != null and projectType != ''">
+            where project_type = #{projectType}
+        </if>
+    </select>
+
+    <select id="listCtServerDeployDataUrl" resultType="java.lang.String" >
+        select data_url
+        from tb_om_deploydata
+        where 1 =1
+        <if test="projectType != null and projectType != ''">
+            and project_type = #{projectType}
+        </if>
+        <if test="zbType != null and zbType != ''">
+            and zb_type = #{zbType}
+        </if>
+        <choose>
+            <when test="dataType != null and dataType != ''">
+                and (data_type = #{dataType} or data_type = #{dataTypeRegionAndRiver} or data_type = #{dataTypeCommon})
+            </when>
+            <otherwise>
+                and (data_type = #{dataTypeRegionAndRiver} or data_type = #{dataTypeCommon})
+            </otherwise>
+        </choose>
+    </select>
+    <select id="listDeployDataUrl" resultType="java.lang.String" >
+        select data_url
+        from tb_om_deploydata
+        where 1 =1
+        <if test="projectType != null and projectType != ''">
+            and project_type = #{projectType}
+        </if>
+        <if test="zbType != null and zbType != ''">
+            and zb_type = #{zbType}
+        </if>
+        <if test="dataType != null and dataType != ''">
+            and data_type = #{dataType}
+        </if>
+    </select>
+
+
 </mapper>
