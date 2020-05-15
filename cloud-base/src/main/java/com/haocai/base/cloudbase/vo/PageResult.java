@@ -1,5 +1,6 @@
 package com.haocai.base.cloudbase.vo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
  * @Author CQ
  * @Date 2020/5/7 17:05
  **/
-public class PageResult<T> {
+public class PageResult<T> implements Serializable {
     private static final long serialVersionUID = -6171751136953308027L;
     private long total = 0L;
     private long totalPages = 0L;

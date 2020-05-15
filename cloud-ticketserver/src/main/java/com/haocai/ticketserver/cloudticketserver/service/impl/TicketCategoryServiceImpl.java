@@ -12,6 +12,7 @@ import com.haocai.ticketserver.cloudticketserver.service.TicketCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,14 +32,30 @@ public class TicketCategoryServiceImpl extends ServiceImpl<TicketCategoryMapper,
     }
 
     @Override
-    public PageResult<List<TbTicketCategory>> listTicketCategoryPage(TicketCategoryReqPage param) {
+    public List<TbTicketCategory> listTicketCategoryPage(TicketCategoryReqPage param) {
+
         PageQuery page = param.getPage();
         if(page == null){
             page = new PageQuery();
             param.setPage(page);
         }
         Long count = baseMapper.count(param);
+        if(count <= 0){
+            return new ArrayList<>();
+        }
         List<TbTicketCategory> list = baseMapper.findPage(param);
-        return PageResult.resultPager(page.getPageNo(),page.getPageSize(),count,list);
+        return list;
+
+        /*PageQuery page = param.getPage();
+        if(page == null){
+            page = new PageQuery();
+            param.setPage(page);
+        }
+        Long count = baseMapper.count(param);
+        if(count <= 0){
+            return PageResult.resultPager(page.getPageNo(),page.getPageSize(),count,new ArrayList<TbTicketCategory>());
+        }
+        List<TbTicketCategory> list = baseMapper.findPage(param);
+        return PageResult.resultPager(page.getPageNo(),page.getPageSize(),count,list);*/
     }
 }

@@ -1,4 +1,4 @@
-<%--<%@page import="com.ssm.entity.BasicUser"%>
+<%--<%@page import="com.haocai.base.cloudbase.entity.BasicUser"%>
 <%@page import="org.apache.shiro.SecurityUtils"%>
 <%@page import="org.apache.shiro.subject.Subject"%>--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

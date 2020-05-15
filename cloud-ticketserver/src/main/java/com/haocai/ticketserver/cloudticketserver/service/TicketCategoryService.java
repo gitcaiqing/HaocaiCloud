@@ -13,5 +13,5 @@ public interface TicketCategoryService extends IService<TbTicketCategory> {
 
     TbTicketCategory selectById(Long id);
 
-    PageResult<List<TbTicketCategory>> listTicketCategoryPage(TicketCategoryReqPage request);
+    List<TbTicketCategory> listTicketCategoryPage(TicketCategoryReqPage request);
 }

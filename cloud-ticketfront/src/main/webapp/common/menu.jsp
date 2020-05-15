@@ -20,8 +20,14 @@
 	<div class="menu">
 		<ul id="menu" >
 			<!-- 用户列表 -->
-			<li><a href="${base }/ssm/basicUser/listPage"><i class="fa fa-table"></i><span>用户列表</span><div class="clearfix"></div></a></li>
-	  	</ul>
+			<%--<li><a href="${base }/ssm/basicUser/listPage"><i class="fa fa-table"></i><span>用户列表</span><div class="clearfix"></div></a></li>--%>
+
+			<li><a href="${base }/om/deployPackage/listPage"><i class="fa fa-table"></i><span>部署包管理</span><div class="clearfix"></div></a></li>
+
+			<li><a href="${base }/om/deployFile/listPage"><i class="fa fa-table"></i><span>部署文件管理</span><div class="clearfix"></div></a></li>
+
+			<li><a href="${base }/om/deployData/listPage"><i class="fa fa-table"></i><span>数据文件管理</span><div class="clearfix"></div></a></li>
+		</ul>
 	</div>
 	<!-- 菜单end -->
 </div>

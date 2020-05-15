@@ -30,7 +30,7 @@
     delete from tb_basic_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insertSelective" parameterType="com.ssm.entity.BasicUser" >
+  <insert id="insertSelective" parameterType="com.haocai.base.cloudbase.entity.BasicUser" >
     insert into tb_basic_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

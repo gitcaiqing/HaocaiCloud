@@ -5,16 +5,18 @@ import java.util.List;
 import com.haocai.base.cloudbase.entity.BasicUser;
 import com.haocai.base.cloudbase.entity.Page;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 
 /**
  * @author https://blog.csdn.net/caiqing116 2018-11-28
  */
-public interface BasicUserMapper{
+@Repository
+public interface BasicUserMapper extends BaseMapper<BasicUser>{
    
 	int deleteByPrimaryKey(Integer id);
 
-    int insert(BasicUser record);
+    Integer insert(BasicUser record);
 
     int insertSelective(BasicUser record);
 

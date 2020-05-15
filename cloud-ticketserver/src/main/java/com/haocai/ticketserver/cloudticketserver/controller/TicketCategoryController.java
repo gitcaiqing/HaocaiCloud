@@ -17,7 +17,7 @@ import java.util.List;
  * @Author CQ
  * @Date 2020/4/30 11:15
  **/
-@Controller
+@RestController
 @RequestMapping("/ticketCategory")
 public class TicketCategoryController {
 
@@ -25,14 +25,14 @@ public class TicketCategoryController {
     private TicketCategoryService ticketCategoryService;
 
     @RequestMapping("/list")
-    @ResponseBody
-    public ResponseMessage<PageResult<List<TbTicketCategory>>> list(TicketCategoryReqPage request){
-        PageResult<List<TbTicketCategory>> results = ticketCategoryService.listTicketCategoryPage(request);
-        return ResponseMessage.ok(results);
+    public ResponseMessage<List<TbTicketCategory>> list(@RequestParam String name){
+        System.out.println(name);
+        TicketCategoryReqPage request = new TicketCategoryReqPage();
+        List<TbTicketCategory> tbTicketCategories = ticketCategoryService.listTicketCategoryPage(request);
+        return ResponseMessage.ok(tbTicketCategories);
     }
 
     @RequestMapping("/selectById/{id}")
-    @ResponseBody
     public ResponseMessage<TbTicketCategory> selectById(@PathVariable(value = "id") Long id){
         return ResponseMessage.ok(ticketCategoryService.selectById(id));
     }
