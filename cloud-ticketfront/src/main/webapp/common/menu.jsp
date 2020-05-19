@@ -27,6 +27,8 @@
 			<li><a href="${base }/om/deployFile/listPage"><i class="fa fa-table"></i><span>部署文件管理</span><div class="clearfix"></div></a></li>
 
 			<li><a href="${base }/om/deployData/listPage"><i class="fa fa-table"></i><span>数据文件管理</span><div class="clearfix"></div></a></li>
+
+			<li><a href="${base }/om/config/listPage"><i class="fa fa-table"></i><span>配置文件管理</span><div class="clearfix"></div></a></li>
 		</ul>
 	</div>
 	<!-- 菜单end -->
