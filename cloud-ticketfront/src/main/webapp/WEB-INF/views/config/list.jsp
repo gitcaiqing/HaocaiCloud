@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
 <%@ include file="/common/common.jsp"%>
+
 </head> 
 <body>
 <div class="page-container">
@@ -61,7 +62,10 @@
 <script src="${base }/static/js/scripts.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="${base }/static/js/bootstrap.min.js"></script>
-<!-- /Bootstrap Core JavaScript -->	   
+<!-- /Bootstrap Core JavaScript -->
+<%--layer--%>
+<script src="${base}/static/module/layer-v2.4/layer/layer.js"></script>
+<%--layer--%>
 <script type="text/javascript">
 $(function(){
 	initTable();
@@ -187,7 +191,14 @@ $.fn.serializeJsonObject = function () {
     return json;
 }
 function onAdd(){
-
+	layer.open({
+		type: 2,
+		title: '新增',
+		shadeClose: true,
+		shade: 0.5,
+		area: ['1000px', '555px'],
+		content: "${base }/om/config/edit"
+	});
 }
 </script>
 </body>

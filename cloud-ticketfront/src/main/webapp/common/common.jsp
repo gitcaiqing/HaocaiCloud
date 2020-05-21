@@ -11,6 +11,7 @@
 <!-- jQuery -->
 <script src="${base }/static/js/jquery-2.1.4.min.js"></script>
 <!-- //jQuery -->
+
 <!-- tables -->
 <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.css" rel="stylesheet">
 <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>

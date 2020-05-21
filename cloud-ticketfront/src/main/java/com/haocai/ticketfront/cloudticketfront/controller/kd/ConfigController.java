@@ -37,4 +37,10 @@ public class ConfigController {
         Page<List> result = configFeignService.listConfig(pageRequestDTO);
         return result;
     }
+
+    @RequestMapping(value="/edit", method = RequestMethod.GET)
+    public Object edit() {
+        return "config/configEdit";
+    }
+
 }
