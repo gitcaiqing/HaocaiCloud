@@ -4,13 +4,18 @@ import com.haocai.base.cloudbase.dto.PageRequestDTO;
 import com.haocai.base.cloudbase.entity.Page;
 import com.haocai.base.cloudbase.entity.TbOmConfig;
 import com.haocai.base.cloudbase.entity.TbOmDeployPackage;
+import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.ticketfront.cloudticketfront.service.ConfigFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -24,6 +29,8 @@ public class ConfigController {
 
     @Autowired
     private ConfigFeignService configFeignService;
+
+    public final static String IMG_PATH_PREFIX = "ct_server_config_json/2_7_0/old/";
 
     @RequestMapping("/listPage")
     public String listPage() {
@@ -41,6 +48,33 @@ public class ConfigController {
     @RequestMapping(value="/edit", method = RequestMethod.GET)
     public Object edit() {
         return "config/configEdit";
+    }
+
+    @RequestMapping(value="/saveOrUpdate")
+    @ResponseBody
+    public Object saveOrUpdate(MultipartFile file) {
+
+        String fileName = file.getOriginalFilename();
+
+        File fileOld = getImgDirFile();
+        File dest = new File(fileOld.getAbsolutePath() +"/"+fileName);
+        try {
+            file.transferTo(dest);
+            return "上传成功";
+        } catch (IOException e) {
+        }
+        return ResponseMessage.ok();
+    }
+
+    public static File getImgDirFile(){
+        // 构建上传文件的存放 “文件夹” 路径
+        String fileDirPath = new String("src/main/resources/" + IMG_PATH_PREFIX);
+        File fileDir = new File(fileDirPath);
+        if(!fileDir.exists()){
+            // 递归生成文件夹
+            fileDir.mkdirs();
+        }
+        return fileDir;
     }
 
 }
