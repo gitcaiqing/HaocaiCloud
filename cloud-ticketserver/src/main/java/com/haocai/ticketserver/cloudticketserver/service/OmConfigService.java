@@ -15,5 +15,7 @@ public interface OmConfigService {
 
     Page<List<TbOmConfig>> listConfig(TbOmConfig omConfig, Page<TbOmConfig> page);
 
+    TbOmConfig saveOrUpdate(TbOmConfig omConfig);
+
     //TbOmConfig insert(TbOmConfig omDeployPackage);
 }

@@ -33,9 +33,9 @@ public class OmConfigController {
         return omConfigService.listConfig(pageRequestDTO.getBean(), pageRequestDTO.getPage());
     }
 
-    /*@RequestMapping(value="/om/config/insert", method = RequestMethod.POST)
+    @RequestMapping(value="/om/config/saveOrUpdate", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseMessage insert(@RequestBody(required = false) TbOmDeployPackage omDeployPackage){
-        return ResponseMessage.ok(deployPackageService.insert(omDeployPackage));
-    }*/
+    public TbOmConfig saveOrUpdate(@RequestBody TbOmConfig omConfig){
+        return omConfigService.saveOrUpdate(omConfig);
+    }
 }

@@ -18,12 +18,13 @@ public class TbOmConfig {
     private String projectType;
     private String projectVersion;
     private String configType;
+    private String configName;
     private String configUrl;
     private String configContent;
     private StatusEnum status;
     private Date createdTime;
     private String createdBy;
-    private Date updated_time;
+    private Date updatedTime;
     private String updatedBy;
     private Long version;
 

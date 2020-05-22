@@ -40,16 +40,23 @@ public class OmConfigServiceImpl implements OmConfigService {
         return new Page<>(reqPage.getPage(), total, rows, reqPage.getPageSize(), reqPage.getSort(), reqPage.getOrder());
     }
 
-    /*@Override
-    public TbOmDeployPackage insert(TbOmDeployPackage omDeployPackage) {
-        if(omDeployPackage == null){
+    @Override
+    public TbOmConfig saveOrUpdate(TbOmConfig omConfig) {
+        if(omConfig == null){
             throw new RuntimeException();
         }
-        omDeployPackage.setPackageUuid(UuidUtil.getUuid());
-        omDeployPackage.setUrlExpired(StatusEnum.A);
-        omDeployPackage.setStatus(StatusEnum.A);
-        omDeployPackage.setCreatedTime(new Date());
-        omDeployPackageMapper.insertSelective(omDeployPackage);
-        return omDeployPackage;
-    }*/
+        if(omConfig.getId() == null){
+            omConfig.setConfigUuid(UuidUtil.getUuid());
+            omConfig.setStatus(StatusEnum.A);
+            omConfig.setCreatedTime(new Date());
+            Long id = omConfigMapper.insertSelective(omConfig);
+            omConfig.setId(id);
+        }else{
+            omConfig.setUpdatedTime(new Date());
+            omConfigMapper.updateByPrimaryKeySelective(omConfig);
+        }
+        return omConfig;
+    }
+
+
 }

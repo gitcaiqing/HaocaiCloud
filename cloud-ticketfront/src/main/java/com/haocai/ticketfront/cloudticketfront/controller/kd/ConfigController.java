@@ -8,10 +8,7 @@ import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.ticketfront.cloudticketfront.service.ConfigFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -52,18 +49,9 @@ public class ConfigController {
 
     @RequestMapping(value="/saveOrUpdate")
     @ResponseBody
-    public Object saveOrUpdate(MultipartFile file) {
-
-        String fileName = file.getOriginalFilename();
-
-        File fileOld = getImgDirFile();
-        File dest = new File(fileOld.getAbsolutePath() +"/"+fileName);
-        try {
-            file.transferTo(dest);
-            return "上传成功";
-        } catch (IOException e) {
-        }
-        return ResponseMessage.ok();
+    public ResponseMessage saveOrUpdate(@RequestBody TbOmConfig omConfig) {
+        omConfig = configFeignService.saveOrUpdate(omConfig);
+        return ResponseMessage.ok(omConfig);
     }
 
     public static File getImgDirFile(){

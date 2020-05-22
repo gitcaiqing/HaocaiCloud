@@ -28,6 +28,10 @@
 <link rel="stylesheet" href="${base }/static/css/icon-font.min.css" type='text/css' />
 <!-- //lined-icons -->
 
+<link href="https://cdn.bootcss.com/bootstrap-fileinput/4.3.3/css/fileinput.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/bootstrap-fileinput/4.3.3/js/fileinput.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap-fileinput/4.3.5/js/locales/zh.min.js "></script>
+
 
 <!-- 引入bootstrap样式 -->
 <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->

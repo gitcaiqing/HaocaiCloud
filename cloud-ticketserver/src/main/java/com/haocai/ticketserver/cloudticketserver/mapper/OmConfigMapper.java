@@ -19,5 +19,9 @@ public interface OmConfigMapper {
 
     List<TbOmConfig> listData(@Param("omConfig") TbOmConfig omConfig, @Param("page") Page<TbOmConfig> page);
 
+    Long insertSelective(TbOmConfig omConfig);
+
+    int updateByPrimaryKeySelective(TbOmConfig omConfig);
+
     //Long insertSelective(TbOmDeployPackage omDeployPackage);
 }

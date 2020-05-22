@@ -70,6 +70,7 @@ function initTable(){
 			{title: '项目类型',field: 'projectType',align: 'center'},
 			{title: '项目版本',field: 'projectVersion',align: 'center'},
 			{title: '配置文件类型',field: 'configType',align: 'center'},
+			{title: '配置文件名称',field: 'configName',align: 'center'},
 			{title: '配置文件地址',field: 'configUrl',align: 'center'},
 
 			//{title: '部署内容',field: 'packUrl',align: 'center'},
@@ -158,7 +159,10 @@ function onSaveOrUpdate(){
 	$.ajax({
 		url:base+"/om/config/saveOrUpdate",
 		type:"POST",
-		data:$("#myEditform").serialize(),
+		//data:$("#myEditform").serialize(),
+		data:JSON.stringify($("#myEditform").serialize()),
+		dataType: 'json',
+		contentType: 'application/json',
 		success:function(data){
 			debugger;
 			if(data.resultCode == 200){
