@@ -6,6 +6,8 @@ import com.haocai.base.cloudbase.entity.OmProject;
 import com.haocai.base.cloudbase.entity.Page;
 import com.haocai.base.cloudbase.entity.TbOmConfig;
 import com.haocai.base.cloudbase.vo.OmProjectChartVO;
+import com.haocai.base.cloudbase.vo.ResponseMessage;
+import com.haocai.ticketserver.cloudticketserver.Exception.BusinessException;
 import com.haocai.ticketserver.cloudticketserver.service.OmConfigService;
 import com.haocai.ticketserver.cloudticketserver.service.OmProjectService;
 import lombok.extern.slf4j.Slf4j;
@@ -50,8 +52,12 @@ public class OmProjectController {
 
     @RequestMapping(value="/selectById")
     @ResponseBody
-    public OmProject selectById(@RequestParam(value = "id") Long id){
-        return omProjectService.selectById(id);
+    public ResponseMessage<OmProject> selectById(@RequestParam(value = "id") Long id){
+        OmProject omProject = omProjectService.selectById(id);
+        if(omProject == null){
+            throw new BusinessException("项目不存在");
+        }
+        return ResponseMessage.ok(omProjectService.selectById(id));
     }
 
     @RequestMapping(value="/deleteById")

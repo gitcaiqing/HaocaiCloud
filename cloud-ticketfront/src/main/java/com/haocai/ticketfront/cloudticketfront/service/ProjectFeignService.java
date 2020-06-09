@@ -5,7 +5,10 @@ import com.haocai.base.cloudbase.dto.PageRequestDTO;
 import com.haocai.base.cloudbase.entity.OmProject;
 import com.haocai.base.cloudbase.entity.Page;
 import com.haocai.base.cloudbase.vo.OmProjectChartVO;
+import com.haocai.base.cloudbase.vo.ResponseMessage;
+import com.haocai.ticketfront.cloudticketfront.service.impl.ProjectFeignServiceHystrix;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,7 +18,8 @@ import java.util.List;
  * @Author CQ
  * @Date 2020/5/19 17:28
  **/
-@FeignClient(value = "cloud-ticketserver", path = "/om/project")
+@FeignClient(value = "cloud-ticketserver", path = "/om/project", fallback = ProjectFeignServiceHystrix.class)
+@Component
 public interface ProjectFeignService {
 
     @RequestMapping(value="/listProject", method = RequestMethod.POST, consumes = "application/json")
@@ -27,7 +31,7 @@ public interface ProjectFeignService {
 
     @RequestMapping(value="/selectById")
     @ResponseBody
-    OmProject selectById(@RequestParam(value = "id") Long id);
+    ResponseMessage<OmProject> selectById(@RequestParam(value = "id") Long id);
 
     @RequestMapping(value="/deleteById")
     @ResponseBody

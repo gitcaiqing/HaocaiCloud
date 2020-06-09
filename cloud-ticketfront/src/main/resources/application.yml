@@ -16,6 +16,10 @@ spring:
       enabled: true
       max-file-size: 50MB
       max-request-size: 50MB
+
+feign:
+  hystrix:
+    enabled: true
 #  thymeleaf:
 #    mode: LEGACYHTML5
 #    cache: false

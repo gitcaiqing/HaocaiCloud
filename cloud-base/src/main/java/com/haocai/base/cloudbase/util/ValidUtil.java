@@ -1,16 +1,19 @@
 package com.haocai.base.cloudbase.util;
 
+import com.haocai.base.cloudbase.enums.CodeEnum;
+import com.haocai.base.cloudbase.enums.ResponseStatusEnum;
+import com.haocai.base.cloudbase.vo.ResponseMessage;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 /**
  * 数据验证工具类
  */
-public class VaildUtil {
+public class ValidUtil {
 
 	/**
 	 * 空字符串验证
-	 * @param str
 	 * @return 空字符串返回true,否则返回false
 	 */
 	public static boolean isEmpty(Object data) {
@@ -122,6 +125,14 @@ public class VaildUtil {
 	 */
 	public static double setPrecisionTwo(double value) {
 		return Double.parseDouble(new DecimalFormat("#.00").format(value));
+	}
+
+	public static boolean requestSuccess(ResponseMessage responseMessage){
+		if(CodeEnum.SUCCESS.getValue().equals(responseMessage.getCode()) &&
+				ResponseStatusEnum.OK.getValue().equals(responseMessage.getStatus())){
+			return true;
+		}
+		return false;
 	}
 	
 }

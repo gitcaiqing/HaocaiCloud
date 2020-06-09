@@ -25,7 +25,7 @@ import java.util.*;
 public class ResponseMessage<T> implements Serializable {
     protected String message;
     protected T result;
-    protected int status;
+    protected Integer status;
     protected String code;
     protected LinkedHashSet<String> fields;
     protected Long timestamp;

@@ -20,7 +20,7 @@
       		<div class="form-group" style="display:block">
 				<label class="col-sm-3 control-label">项目类型：</label>
 				<div class="col-sm-9">
-					<input type="text" readonly="readonly" class="form-control" value="${project.projectType eq 'CTSERVER' ? 'CTSERVER':'KMAPSERVER' }"/>
+					<input type="text" readonly="readonly" class="form-control" value="${project.projectType eq 'CTSERVER' ? 'CTSERVER': (project.projectType eq null ? '':'KMAPSERVER') }"/>
 				</div>
 			</div>
       		<div class="form-group" style="display:block">

@@ -11,6 +11,7 @@
     <modules>
         <module>cloud-mybatisGenerator</module>
         <module>cloud-mybatisgenerator</module>
+        <module>cloud-orderserver</module>
     </modules>
 
 

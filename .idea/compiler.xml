@@ -12,6 +12,7 @@
         <module name="cloud-ticketserver" />
         <module name="cloud-base" />
         <module name="cloud-ticketfront" />
+        <module name="cloud-orderserver" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

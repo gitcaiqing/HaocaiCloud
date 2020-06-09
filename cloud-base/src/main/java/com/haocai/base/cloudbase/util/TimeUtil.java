@@ -128,7 +128,7 @@ public class TimeUtil {
 	public static Date formatStringToDate(String date) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		try {
-			if (VaildUtil.isNotEmpty(date)) {
+			if (ValidUtil.isNotEmpty(date)) {
 				return sdf.parse(date);
 			}
 		} catch (ParseException e) {

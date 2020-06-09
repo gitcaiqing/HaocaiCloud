@@ -4,20 +4,20 @@ import com.haocai.base.cloudbase.dto.OmProjectPageDTO;
 import com.haocai.base.cloudbase.dto.PageRequestDTO;
 import com.haocai.base.cloudbase.entity.OmProject;
 import com.haocai.base.cloudbase.entity.Page;
-import com.haocai.base.cloudbase.entity.TbOmConfig;
+import com.haocai.base.cloudbase.enums.CodeEnum;
+import com.haocai.base.cloudbase.enums.ResponseStatusEnum;
 import com.haocai.base.cloudbase.util.TimeUtil;
-import com.haocai.base.cloudbase.util.VaildUtil;
+import com.haocai.base.cloudbase.util.ValidUtil;
 import com.haocai.base.cloudbase.vo.OmProjectChartVO;
 import com.haocai.base.cloudbase.vo.ResponseMessage;
-import com.haocai.ticketfront.cloudticketfront.service.ConfigFeignService;
 import com.haocai.ticketfront.cloudticketfront.service.ProjectFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.File;
-import java.util.Arrays;
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Objects;
 
@@ -89,7 +89,10 @@ public class ProjectController {
     @RequestMapping(value="/getProjectById/{id}", method = RequestMethod.GET)
     public String getBasicUserById(@PathVariable("id")Long id, Model model) {
         if(id != null){
-            model.addAttribute("project", projectFeignService.selectById(id));
+            ResponseMessage<OmProject> res = projectFeignService.selectById(id);
+            if(ValidUtil.requestSuccess(res)){
+                model.addAttribute("project", res.getResult());
+            }
         }
         return "project/projectDetail";
     }
