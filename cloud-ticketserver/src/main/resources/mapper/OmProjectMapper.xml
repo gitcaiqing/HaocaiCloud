@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haocai.ticketserver.cloudticketserver.mapper.OmProjectMapper">
+  <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.OmProject">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="project_uuid" jdbcType="VARCHAR" property="projectUuid" />
+    <result column="work_id" jdbcType="BIGINT" property="workId" />
+    <result column="project_type" jdbcType="VARCHAR" property="projectType" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="communication_group" jdbcType="VARCHAR" property="communicationGroup" />
+    <result column="docking_people" jdbcType="VARCHAR" property="dockingPeople" />
+    <result column="deployment_status" jdbcType="VARCHAR" property="deploymentStatus" />
+    <result column="acceptance_status" jdbcType="VARCHAR" property="acceptanceStatus" />
+    <result column="memo" jdbcType="VARCHAR" property="memo" />
+    <result column="complete_time" jdbcType="TIMESTAMP" property="completeTime" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
+    <result column="version" jdbcType="BIGINT" property="version" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, project_uuid, work_id, project_type, title, communication_group, docking_people, 
+    deployment_status, acceptance_status, memo, complete_time, status, created_time, 
+    created_by, updated_time, updated_by, version
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_om_project
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_om_project
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.haocai.base.cloudbase.entity.OmProject">
+    insert into tb_om_project (id, project_uuid, work_id, 
+      project_type, title, communication_group, 
+      docking_people, deployment_status, acceptance_status, 
+      memo, complete_time, status, 
+      created_time, created_by, updated_time, 
+      updated_by, version)
+    values (#{id,jdbcType=BIGINT}, #{projectUuid,jdbcType=VARCHAR}, #{workId,jdbcType=BIGINT},
+      #{projectType,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{communicationGroup,jdbcType=VARCHAR}, 
+      #{dockingPeople,jdbcType=VARCHAR}, #{deploymentStatus,jdbcType=VARCHAR}, #{acceptanceStatus,jdbcType=VARCHAR}, 
+      #{memo,jdbcType=VARCHAR}, #{completeTime,jdbcType=TIMESTAMP}, #{status,jdbcType=CHAR}, 
+      #{createdTime,jdbcType=TIMESTAMP}, #{createdBy,jdbcType=VARCHAR}, #{updatedTime,jdbcType=TIMESTAMP}, 
+      #{updatedBy,jdbcType=VARCHAR}, #{version,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.haocai.base.cloudbase.entity.OmProject">
+    insert into tb_om_project
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="projectUuid != null">
+        project_uuid,
+      </if>
+      <if test="workId != null">
+        work_id,
+      </if>
+      <if test="projectType != null">
+        project_type,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="communicationGroup != null">
+        communication_group,
+      </if>
+      <if test="dockingPeople != null">
+        docking_people,
+      </if>
+      <if test="deploymentStatus != null">
+        deployment_status,
+      </if>
+      <if test="acceptanceStatus != null">
+        acceptance_status,
+      </if>
+      <if test="memo != null">
+        memo,
+      </if>
+      <if test="completeTime != null">
+        complete_time,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="createdTime != null">
+        created_time,
+      </if>
+      <if test="createdBy != null">
+        created_by,
+      </if>
+      <if test="updatedTime != null">
+        updated_time,
+      </if>
+      <if test="updatedBy != null">
+        updated_by,
+      </if>
+      <if test="version != null">
+        version,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="projectUuid != null">
+        #{projectUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="workId != null">
+        #{workId,jdbcType=BIGINT},
+      </if>
+      <if test="projectType != null">
+        #{projectType,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="communicationGroup != null">
+        #{communicationGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="dockingPeople != null">
+        #{dockingPeople,jdbcType=VARCHAR},
+      </if>
+      <if test="deploymentStatus != null">
+        #{deploymentStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="acceptanceStatus != null">
+        #{acceptanceStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="completeTime != null">
+        #{completeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=CHAR},
+      </if>
+      <if test="createdTime != null">
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdBy != null">
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedBy != null">
+        #{updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        #{version,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.haocai.base.cloudbase.entity.OmProject">
+    update tb_om_project
+    <set>
+      <if test="projectUuid != null">
+        project_uuid = #{projectUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="workId != null">
+        work_id = #{workId,jdbcType=BIGINT},
+      </if>
+      <if test="projectType != null">
+        project_type = #{projectType,jdbcType=VARCHAR},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="communicationGroup != null">
+        communication_group = #{communicationGroup,jdbcType=VARCHAR},
+      </if>
+      <if test="dockingPeople != null">
+        docking_people = #{dockingPeople,jdbcType=VARCHAR},
+      </if>
+      <if test="deploymentStatus != null">
+        deployment_status = #{deploymentStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="acceptanceStatus != null">
+        acceptance_status = #{acceptanceStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        memo = #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="completeTime != null">
+        complete_time = #{completeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=CHAR},
+      </if>
+      <if test="createdTime != null">
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdBy != null">
+        created_by = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedBy != null">
+        updated_by = #{updatedBy,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null">
+        version = #{version,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.haocai.base.cloudbase.entity.OmProject">
+    update tb_om_project
+    set project_uuid = #{projectUuid,jdbcType=VARCHAR},
+      work_id = #{workId,jdbcType=BIGINT},
+      project_type = #{projectType,jdbcType=VARCHAR},
+      title = #{title,jdbcType=VARCHAR},
+      communication_group = #{communicationGroup,jdbcType=VARCHAR},
+      docking_people = #{dockingPeople,jdbcType=VARCHAR},
+      deployment_status = #{deploymentStatus,jdbcType=VARCHAR},
+      acceptance_status = #{acceptanceStatus,jdbcType=VARCHAR},
+      memo = #{memo,jdbcType=VARCHAR},
+      complete_time = #{completeTime,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=CHAR},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      created_by = #{createdBy,jdbcType=VARCHAR},
+      updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      updated_by = #{updatedBy,jdbcType=VARCHAR},
+      version = #{version,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+
+  <!-- 统计数据总数 -->
+  <select id="countData" resultType="java.lang.Integer" parameterType="com.haocai.base.cloudbase.dto.OmProjectPageDTO">
+    select count(*)
+    from tb_om_project
+    <include refid="pageWhere"></include>
+    <!--<if test="omDeployPackage.username != null and basicUser.username != ''">
+        and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="basicUser.realname != null and basicUser.realname != ''">
+        and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+    </if>-->
+  </select>
+  <!-- 统计所有数据 -->
+  <select id="listData" resultMap="BaseResultMap" parameterType="com.haocai.base.cloudbase.dto.OmProjectPageDTO">
+    select <include refid="Base_Column_List"/>
+    from tb_om_project
+    <include refid="pageWhere"></include>
+    <!--<if test="basicUser.username != null and basicUser.username != ''">
+        and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+    </if>
+    <if test="basicUser.realname != null and basicUser.realname != ''">
+        and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+    </if>-->
+    <if test="page.sort != null and page.order != null">
+      order by ${page.sort} ${page.order}
+    </if>
+    LIMIT #{page.start},#{page.pageSize}
+  </select>
+
+  <select id="listByProjectType" resultMap="BaseResultMap" parameterType="com.haocai.base.cloudbase.dto.OmProjectPageDTO">
+    select
+    <include refid="Base_Column_List" />
+    from tb_om_project
+    <include refid="pageWhere"></include>
+  </select>
+
+  <sql id="pageWhere">
+    where status = 'A'
+    <if test="omProjectPageDTO.workId != null and omProjectPageDTO.workId != ''">
+        and work_id like concat('%',#{omProjectPageDTO.workId},'%')
+    </if>
+    <if test="omProjectPageDTO.projectType != null and omProjectPageDTO.projectType != ''">
+      and project_type = #{omProjectPageDTO.projectType}
+    </if>
+    <if test="omProjectPageDTO.title != null and omProjectPageDTO.title != ''">
+      and title = #{omProjectPageDTO.title}
+    </if>
+    <if test="omProjectPageDTO.dockingPeople != null and omProjectPageDTO.dockingPeople != ''">
+      and docking_people = #{omProjectPageDTO.dockingPeople}
+    </if>
+    <if test="omProjectPageDTO.deploymentStatus != null">
+      and deployment_status = #{omProjectPageDTO.deploymentStatus}
+    </if>
+    <if test="omProjectPageDTO.acceptanceStatus != null">
+      and acceptance_status = #{omProjectPageDTO.acceptanceStatus}
+    </if>
+    /*创建时间*/
+    <if test="omProjectPageDTO.createdTimeStart != null">
+      and created_time <![CDATA[>=]]> #{omProjectPageDTO.createdTimeStart,jdbcType=TIMESTAMP}
+    </if>
+    <if test="omProjectPageDTO.createdTimeEnd != null">
+      and created_time <![CDATA[<=]]> #{omProjectPageDTO.createdTimeEnd,jdbcType=TIMESTAMP}
+    </if>
+    /*完成时间*/
+    <if test="omProjectPageDTO.completeTimeStart != null">
+      and complete_time <![CDATA[>=]]> #{omProjectPageDTO.completeTimeStart,jdbcType=TIMESTAMP}
+    </if>
+    <if test="omProjectPageDTO.completeTimeEnd != null">
+      and complete_time <![CDATA[<=]]> #{omProjectPageDTO.completeTimeEnd,jdbcType=TIMESTAMP}
+    </if>
+
+
+  </sql>
+
+</mapper>

@@ -6,7 +6,12 @@
 
     <groupId>com.haocai</groupId>
     <artifactId>HaocaiCloud</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>cloud-mybatisGenerator</module>
+        <module>cloud-mybatisgenerator</module>
+    </modules>
 
 
 </project>

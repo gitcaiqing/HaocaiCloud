@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-hfront" />
         <module name="cloud-eurekaserver" />
-        <module name="HaocaiCloud" />
+        <module name="cloudmybatisgenerator" />
         <module name="cloud-ticketserver" />
         <module name="cloud-base" />
         <module name="cloud-ticketfront" />

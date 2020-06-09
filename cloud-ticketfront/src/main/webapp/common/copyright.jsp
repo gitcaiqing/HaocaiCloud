@@ -8,7 +8,8 @@
 </head>
 <body>
 	<div class="copyrights">
-		<p>Copyright &copy; 2018. <a href="https://blog.csdn.net/caiqing116" target="_blank" title="程序猿的博客">程序猿的博客</a></p>
+		<%--<p>Copyright &copy; 2018. <a href="https://blog.csdn.net/caiqing116" target="_blank" title="程序猿的博客">程序猿的博客</a></p>--%>
+		<p>Copyright &copy; 2020. <a href="" target="_blank" title="科达蔡清">科达蔡清</a></p>
 	</div>	
 </body>
 </html>

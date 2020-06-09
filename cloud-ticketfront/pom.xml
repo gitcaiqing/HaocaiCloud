@@ -12,6 +12,7 @@
     <artifactId>cloud-ticketfront</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cloud-ticketfront</name>
+    <packaging>war</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -147,6 +148,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <useDefaultDelimiters>true</useDefaultDelimiters>
+                </configuration>
+            </plugin>
         </plugins>
         <!-- jsp 404解决 -->
         <resources>
@@ -170,6 +179,10 @@
             </resource>
             <!-- 打包时将jsp文件拷贝到META-INF目录下 -->
             <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
                 <!-- 指定resources插件处理哪个目录下的资源文件 -->
                 <directory>src/main/webapp</directory>
                 <!--注意此次必须要放在此目录下才能被访问到 -->
@@ -178,6 +191,7 @@
                     <include>**/*.*</include>
                 </includes>
             </resource>
+
         </resources>
         <!-- jsp 404解决 -->
 

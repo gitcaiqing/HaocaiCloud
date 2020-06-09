@@ -24,7 +24,7 @@ public interface ConfigFeignService {
     @RequestMapping(value="/listConfig", method = RequestMethod.POST, consumes = "application/json")
     Page<List<TbOmConfig>> listConfig(@RequestBody PageRequestDTO<TbOmConfig> pageRequestDTO);
 
-    @RequestMapping(value="/om/config/saveOrUpdate", method = RequestMethod.POST)
+    @RequestMapping(value="/saveOrUpdate", method = RequestMethod.POST)
     @ResponseBody
     TbOmConfig saveOrUpdate(@RequestBody TbOmConfig omConfig);
 }

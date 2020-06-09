@@ -46,3 +46,12 @@
 <!--<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script> -->
 <!-- 引入中文语言包 -->
 <!--<script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script> -->
+
+<script src="https://js.cybozu.cn/momentjs/2.24.0/moment-with-locales.min.js"></script>
+<%--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--%>
+<link href="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+<%--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>--%>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<%--<script src="static/js/moment-with-locales.js"></script>--%>
+<script src="https://cdn.bootcss.com/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>

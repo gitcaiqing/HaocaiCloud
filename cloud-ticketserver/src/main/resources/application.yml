@@ -9,7 +9,7 @@ spring:
     name: cloud-ticketserver
   #数据源
   datasource:
-    url: jdbc:mysql://localhost:3306/db_haocaicloud??useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
     username: root
     password: 123456
     druid:
@@ -26,6 +26,10 @@ spring:
       #关闭空闲连接超时时间
       remove-abandoned-timeout: 1800
       filters: stat,config
+  jackson:
+    #指定日期格式化时区
+    time-zone: GMT+8
+
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
@@ -48,7 +52,6 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
-
 logging:
   level:
     com.sinoprof: DEBUG

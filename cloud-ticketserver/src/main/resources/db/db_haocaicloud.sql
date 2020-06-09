@@ -130,6 +130,36 @@ INSERT INTO tb_om_exporthistory(id, export_uuid,dolphin_version,project_type,pro
 	status, created_time,created_by,updated_time,updated_by,version ) values
 (1, 'uuid01','DOPS2.4','CTSERVER','CTSERVER2.7.0','WGS84', 'ADCODE320000','导出的内容，提供给现场','A','2020-05-12','caiqing',null,null,0);
 
+
+
+
+DROP TABLE IF EXISTS tb_om_project;
+CREATE TABLE tb_om_project(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+		project_uuid varchar(32),
+		work_id varchar(32),
+		project_type varchar(30),
+		title varchar(300),
+		communication_group varchar(200),
+		docking_people varchar(50),
+		deployment_status varchar(32) comment '部署状态',
+		acceptance_status varchar(32) comment '验收状态',
+		memo varchar(200) comment '备注',
+		complete_time datetime comment '完成时间',
+		status char(1),
+		created_time datetime comment '创建时间或开始时间',
+		created_by varchar(255),
+		updated_time datetime,
+		updated_by varchar(255),
+		version BIGINT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id)
+);
+INSERT INTO tb_om_project(id, project_uuid,work_id,project_type,title, communication_group, docking_people, deployment_status,acceptance_status,memo,complete_time,
+	status, created_time,created_by,updated_time,updated_by,version ) values
+(1, 'uuid01','104','CTSERVER','连云港公安执法规范化平台新增部署江苏省科达地图服务（KMap-Server 未加鉴权）','连云港公安执法平台', '李绪栋','start','unsend','备注','2020-06-01','A','2020-06-01','caiqing',null,null,0);
+
+
+
 DROP TABLE IF EXISTS tb_om_config;
 CREATE TABLE tb_om_config(
     id BIGINT NOT NULL AUTO_INCREMENT,
