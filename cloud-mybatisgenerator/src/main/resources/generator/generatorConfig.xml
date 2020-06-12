@@ -46,6 +46,26 @@
                  <property name="enableSubPackages" value="true"/>
              </javaClientGenerator>
              <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-             <table tableName="tb_om_project" domainObjectName="OmProject" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+             <!--<table tableName="tb_om_project" domainObjectName="OmProject" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+             <table tableName="tb_trans_order" domainObjectName="TransOrder" enableCountByExample="false"
+                    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    selectByExampleQueryId="false"></table>
+
+             <table tableName="tb_trans_task" domainObjectName="TransTask" enableCountByExample="false"
+                    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    selectByExampleQueryId="false"></table>
+
+             <table tableName="tb_trans_task_his" domainObjectName="TransTaskHis" enableCountByExample="false"
+                    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    selectByExampleQueryId="false"></table>
+
+             <table tableName="tb_trans_learning_course" domainObjectName="TransLearningCourse" enableCountByExample="false"
+                    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    selectByExampleQueryId="false"></table>
+
+
+
+
+
          </context>
      </generatorConfiguration>

@@ -612,3 +612,69 @@ INSERT INTO tb_ticket_category(id, tc_uuid, name) values
 (2, 'dvgsgsdgdgsfsfdgfgg','TEST_SSC');
 
 
+-- 分布式事务案例
+DROP TABLE IF EXISTS tb_trans_order;
+CREATE TABLE tb_trans_order(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    order_uuid varchar(32),
+	order_no varchar(32),
+    amount BIGINT,
+	user_id varchar(32),
+    status char(1),
+    created_time datetime,
+    created_by varchar(255),
+    updated_time datetime,
+    updated_by varchar(255),
+    version BIGINT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id)
+);
+DROP TABLE IF EXISTS tb_trans_task;
+CREATE TABLE tb_trans_task(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    task_uuid varchar(32),
+    task_type varchar(50),
+    mq_exchange varchar(200),
+	mq_routing_key varchar(200),
+    mq_request_body varchar(2000),
+	error_message varchar(2000),
+	status char(1),
+    created_time datetime,
+    created_by varchar(255),
+    updated_time datetime,
+    updated_by varchar(255),
+    version BIGINT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id)
+);
+DROP TABLE IF EXISTS tb_trans_task_his;
+CREATE TABLE tb_trans_task_his(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    task_his_uuid varchar(32),
+    task_type varchar(50),
+    mq_exchange varchar(200),
+	mq_routing_key varchar(200),
+    mq_request_body varchar(2000),
+	error_message varchar(2000),
+    status char(1),
+    created_time datetime,
+    created_by varchar(255),
+    updated_time datetime,
+    updated_by varchar(255),
+    version BIGINT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id)
+);
+DROP TABLE IF EXISTS tb_trans_learning_course;
+CREATE TABLE tb_trans_learning_course(
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    course_uuid varchar(32),
+	user_id varchar(32),
+	order_no varchar(32),
+    price BIGINT,
+	charge INT comment '收费规则  如 90 为 9折  90/100',
+    status char(1),
+    created_time datetime,
+    created_by varchar(255),
+    updated_time datetime,
+    updated_by varchar(255),
+    version BIGINT NOT NULL DEFAULT 0,
+    PRIMARY KEY(id)
+);

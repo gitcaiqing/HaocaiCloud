@@ -1,7 +1,6 @@
-package com.haocai.ticketserver.cloudticketserver.Exception;
+package com.haocai.base.cloudbase.exception;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Description TODO
