@@ -50,7 +50,7 @@
 			<div class="form-group" style="display:block">
 				<label class="col-sm-3 control-label">验收状态：</label>
 				<div class="col-sm-9">
-					<input type="text" readonly="readonly" class="form-control" value="${project.acceptanceStatus eq 'ACCEPTED' ? '已验收': ( project.acceptanceStatus eq 'UNSEND' ? '未发送验收报告':'已发送验收报告' ) }"/>
+					<input type="text" readonly="readonly" class="form-control" value="${project.acceptanceStatus eq 'ACCEPTED' ? '已验收': ( project.acceptanceStatus eq 'UNSEND' ? '未提供验收报告':'已提供验收报告' ) }"/>
 				</div>
 			</div>
 			<div class="form-group" style="display:block">

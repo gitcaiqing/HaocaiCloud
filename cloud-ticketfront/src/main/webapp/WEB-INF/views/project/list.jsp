@@ -28,8 +28,13 @@
 			<div class="grid-form1">
 				<form class="form-inline" id="myform">
 					<div class="form-group">
-						<input style="width: 146px" type="text" class="form-control" id="workId" name="workId" value="${project.workId}" placeholder="工单ID">
+						<input style="width: 126px" type="text" class="form-control" id="workId" name="workId" value="${project.workId}" placeholder="工单ID">
 					</div>
+
+					<div class="form-group">
+						<input style="width: 126px" type="text" class="form-control" id="title" name="title" value="${project.workId}" placeholder="标题">
+					</div>
+
 
 					<div class="form-group">
 

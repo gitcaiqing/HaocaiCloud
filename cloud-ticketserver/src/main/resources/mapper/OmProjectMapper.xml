@@ -279,7 +279,7 @@
       and project_type = #{omProjectPageDTO.projectType}
     </if>
     <if test="omProjectPageDTO.title != null and omProjectPageDTO.title != ''">
-      and title = #{omProjectPageDTO.title}
+      and title like concat('%', #{omProjectPageDTO.title} ,'%')
     </if>
     <if test="omProjectPageDTO.dockingPeople != null and omProjectPageDTO.dockingPeople != ''">
       and docking_people = #{omProjectPageDTO.dockingPeople}

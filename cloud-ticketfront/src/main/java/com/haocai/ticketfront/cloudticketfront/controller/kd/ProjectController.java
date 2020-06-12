@@ -75,7 +75,10 @@ public class ProjectController {
     @RequestMapping(value="/edit", method = RequestMethod.GET)
     public Object edit(@RequestParam("id")Long id, Model model) {
         if(id != null && id != 0){
-            model.addAttribute("project", projectFeignService.selectById(id));
+            ResponseMessage<OmProject> res = projectFeignService.selectById(id);
+            if(ValidUtil.requestSuccess(res)){
+                model.addAttribute("project", res.getResult());
+            }
         }
         return "project/projectEdit";
     }

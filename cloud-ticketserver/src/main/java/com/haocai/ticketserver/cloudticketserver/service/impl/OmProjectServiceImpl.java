@@ -9,6 +9,7 @@ import com.haocai.base.cloudbase.enums.ProjectTypeEnum;
 import com.haocai.base.cloudbase.enums.StatusEnum;
 import com.haocai.base.cloudbase.util.UuidUtil;
 import com.haocai.base.cloudbase.vo.OmProjectChartVO;
+import com.haocai.ticketserver.cloudticketserver.Exception.BusinessException;
 import com.haocai.ticketserver.cloudticketserver.mapper.OmConfigMapper;
 import com.haocai.ticketserver.cloudticketserver.mapper.OmProjectMapper;
 import com.haocai.ticketserver.cloudticketserver.service.OmProjectService;
@@ -46,22 +47,30 @@ public class OmProjectServiceImpl implements OmProjectService {
     @Override
     public OmProject saveOrUpdate(OmProject omProject) {
         if(omProject == null){
-            throw new RuntimeException();
+            throw new BusinessException("项目不能为空");
         }
         Date now = new Date();
         if(omProject.getId() == null){
             omProject.setProjectUuid(UuidUtil.getUuid());
             omProject.setStatus(StatusEnum.A);
             omProject.setCreatedTime(now);
+            omProject.setCompleteTime(now);
             if(DeploymentStatusEnum.END.getValue().equals(omProject.getDeploymentStatus())
-                && AcceptanceStatusEnum.ACCEPTED.getValue().equals(omProject.getAcceptanceStatus())){
+                //&& AcceptanceStatusEnum.ACCEPTED.getValue().equals(omProject.getAcceptanceStatus()))
+            ){
                 omProject.setCompleteTime(now);
             }
             omProjectMapper.insertSelective(omProject);
         }else{
+            OmProject omProjectOld = omProjectMapper.selectByPrimaryKey(omProject.getId());
+            if(omProjectOld == null){
+                throw new BusinessException("项目不存在，更新失败");
+            }
             omProject.setUpdatedTime(now);
             if(DeploymentStatusEnum.END.equals(omProject.getDeploymentStatus())
-                    && AcceptanceStatusEnum.ACCEPTED.equals(omProject.getAcceptanceStatus())){
+                    && !DeploymentStatusEnum.END.equals(omProjectOld.getDeploymentStatus())
+                    //&& AcceptanceStatusEnum.ACCEPTED.equals(omProject.getAcceptanceStatus())
+            ){
                 omProject.setCompleteTime(now);
             }
             omProjectMapper.updateByPrimaryKeySelective(omProject);
