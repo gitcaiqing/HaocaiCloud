@@ -1,4 +1,4 @@
-package com.haocai.ticketserver.cloudticketserver.Exception;
+package com.haocai.ticketserver.cloudticketserver.exception;
 
 import com.haocai.base.cloudbase.exception.BusinessException;
 import com.haocai.base.cloudbase.vo.ResponseMessage;

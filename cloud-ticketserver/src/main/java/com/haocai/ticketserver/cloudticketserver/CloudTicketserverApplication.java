@@ -7,7 +7,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.haocai.ticketserver.cloudticketserver.mapper")
+@MapperScan({
+        "com.haocai.ticketserver.cloudticketserver.mapper",
+        "com.haocai.base.cloudbase.mapper"
+})
 public class CloudTicketserverApplication {
 
     public static void main(String[] args) {

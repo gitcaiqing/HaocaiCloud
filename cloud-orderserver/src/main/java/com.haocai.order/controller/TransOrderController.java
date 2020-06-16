@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Date;
+
 /**
  * @Description TODO
  * @Author CQ
@@ -27,9 +29,15 @@ public class TransOrderController {
     @RequestMapping(value="/create")
     @ResponseBody
     public ResponseMessage<TransOrder> createOrder(){
-        log.info("开始下单...");
+
         try {
-            return ResponseMessage.ok(transOrderService.createOrder());
+            TransOrder transOrder = null;
+            for(int i=0; i<10; i++){
+                log.info("开始下单...{}", new Date());
+                transOrder = transOrderService.createOrder();
+                Thread.sleep(500);
+            }
+            return  ResponseMessage.ok(transOrder);
         } catch (Exception e) {
             e.printStackTrace();
             throw new BusinessException("下单失败");

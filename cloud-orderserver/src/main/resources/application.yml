@@ -48,7 +48,7 @@ spring:
     #消费者
     consumer:
       #指定消费者分组
-      group-id: order_group
+      group-id: group_learning
       auto-offset-reset: earliest
       enable-auto-commit: true
       auto-commit-interval: 100

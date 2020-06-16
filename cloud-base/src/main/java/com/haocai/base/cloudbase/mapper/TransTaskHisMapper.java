@@ -5,6 +5,9 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.haocai.base.cloudbase.entity.TransTaskHis;
 import org.springframework.stereotype.Repository;
 
+import java.util.Date;
+import java.util.List;
+
 @Repository
 public interface TransTaskHisMapper extends BaseMapper<TransTaskHis> {
     int deleteByPrimaryKey(Long id);
@@ -18,4 +21,8 @@ public interface TransTaskHisMapper extends BaseMapper<TransTaskHis> {
     int updateByPrimaryKeySelective(TransTaskHis record);
 
     int updateByPrimaryKey(TransTaskHis record);
+
+    TransTaskHis selectByUuid(String taskUuid);
+
+    List<TransTaskHis> listByTime(Date aMinuteAgoTime);
 }

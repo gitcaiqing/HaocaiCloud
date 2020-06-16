@@ -30,6 +30,32 @@ spring:
     #指定日期格式化时区
     time-zone: GMT+8
 
+  #kafka相关配置
+  kafka:
+    #指定kafka 代理地址，可以多个
+    #bootstrap-servers: 10.68.8.91:9092
+    bootstrap-servers: localhost:9092
+    #生产者
+    producer:
+      # 指定消息key和消息体的编解码方式
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 0
+      # 每次批量发送消息的数量
+      batch-size: 0
+      # 缓存大小
+      buffer-memory: 33554432
+    #消费者
+    consumer:
+      #指定消费者分组
+      group-id: group_order
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      #指定消息key和消息体的编解码方式
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml

@@ -30,6 +30,12 @@
     delete from tb_trans_task
     where id = #{id,jdbcType=BIGINT}
   </delete>
+  <select id="selectByUuid" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_trans_task
+    where task_uuid = #{task_uuid,jdbcType=VARCHAR}
+  </select>
   <insert id="insert" parameterType="com.haocai.base.cloudbase.entity.TransTask">
     insert into tb_trans_task (id, task_uuid, task_type, 
       mq_exchange, mq_routing_key, mq_request_body, 
@@ -185,4 +191,11 @@
       version = #{version,jdbcType=BIGINT}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="listByTime" resultMap="BaseResultMap">
+    select *
+    from tb_trans_task
+    where status = 'A'
+    and created_time <![CDATA[<=]]> #{aMinuteAgoTime,jdbcType=TIMESTAMP}
+  </select>
 </mapper>
