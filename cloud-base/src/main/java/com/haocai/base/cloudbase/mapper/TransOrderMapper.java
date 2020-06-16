@@ -1,9 +1,9 @@
 package com.haocai.base.cloudbase.mapper;
 
 
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.haocai.base.cloudbase.entity.TransOrder;
 import org.springframework.stereotype.Repository;
+
 
 @Repository
 public interface TransOrderMapper extends BaseMapper<TransOrder>{

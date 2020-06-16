@@ -1,7 +1,6 @@
 package com.haocai.base.cloudbase.mapper;
 
 
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.haocai.base.cloudbase.entity.TransTaskHis;
 import org.springframework.stereotype.Repository;
 

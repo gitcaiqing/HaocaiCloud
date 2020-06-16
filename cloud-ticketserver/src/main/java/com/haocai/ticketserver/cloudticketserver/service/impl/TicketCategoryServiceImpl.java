@@ -1,13 +1,9 @@
 package com.haocai.ticketserver.cloudticketserver.service.impl;
 
-import com.baomidou.mybatisplus.plugins.Page;
 import com.haocai.base.cloudbase.dto.PageQuery;
 import com.haocai.base.cloudbase.dto.TicketCategoryReqPage;
 import com.haocai.base.cloudbase.entity.TbTicketCategory;
-import com.haocai.base.cloudbase.vo.PageResult;
-import com.haocai.ticketserver.cloudticketserver.mapper.BaseMapper;
-import com.haocai.ticketserver.cloudticketserver.mapper.TicketCategoryMapper;
-import com.haocai.ticketserver.cloudticketserver.service.IService;
+import com.haocai.base.cloudbase.mapper.TicketCategoryMapper;
 import com.haocai.ticketserver.cloudticketserver.service.TicketCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

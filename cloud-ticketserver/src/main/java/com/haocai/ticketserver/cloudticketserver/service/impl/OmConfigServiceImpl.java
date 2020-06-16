@@ -2,12 +2,9 @@ package com.haocai.ticketserver.cloudticketserver.service.impl;
 
 import com.haocai.base.cloudbase.entity.Page;
 import com.haocai.base.cloudbase.entity.TbOmConfig;
-import com.haocai.base.cloudbase.entity.TbOmDeployPackage;
 import com.haocai.base.cloudbase.enums.StatusEnum;
+import com.haocai.base.cloudbase.mapper.OmConfigMapper;
 import com.haocai.base.cloudbase.util.UuidUtil;
-import com.haocai.ticketserver.cloudticketserver.mapper.OmConfigMapper;
-import com.haocai.ticketserver.cloudticketserver.mapper.OmDeployPackageMapper;
-import com.haocai.ticketserver.cloudticketserver.service.DeployPackageService;
 import com.haocai.ticketserver.cloudticketserver.service.OmConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -19,7 +19,7 @@ import java.util.List;
  * @Author CQ
  * @Date 2020/6/12 16:52
  **/
-@Component
+//@Component
 @Slf4j
 public class TransOrderSchedule {
 

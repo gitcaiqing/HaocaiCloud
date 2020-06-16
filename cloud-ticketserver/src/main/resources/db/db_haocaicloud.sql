@@ -612,7 +612,7 @@ INSERT INTO tb_ticket_category(id, tc_uuid, name) values
 (2, 'dvgsgsdgdgsfsfdgfgg','TEST_SSC');
 
 
--- 分布式事务案例
+--  分布式事务 基于可靠消息的最终一致性方案
 DROP TABLE IF EXISTS tb_trans_order;
 CREATE TABLE tb_trans_order(
     id BIGINT NOT NULL AUTO_INCREMENT,
@@ -678,3 +678,45 @@ CREATE TABLE tb_trans_learning_course(
     version BIGINT NOT NULL DEFAULT 0,
     PRIMARY KEY(id)
 );
+
+
+--  分布式事务 事务补偿型方案（tcc解决方案） 创建数据库
+DROP TABLE IF EXISTS `tb_trans_tcc_account_info`;
+CREATE TABLE `tb_trans_tcc_account_info`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `account_name` varchar(100) COMMENT '户主姓名',
+  `account_no` varchar(100) COMMENT '银行卡号',
+  `account_password` varchar(100) COMMENT '帐户密码',
+  `account_balance` bigint(20) DEFAULT NULL COMMENT '帐户余额 单位分',
+  PRIMARY KEY (`id`)
+);
+INSERT INTO `tb_trans_tcc_account_info` VALUES (1, '张三的账户', '1', '', 10000);
+INSERT INTO `tb_trans_tcc_account_info` VALUES (2, '李四的账户', '2', '', 10000);
+
+
+DROP TABLE IF EXISTS `tb_trans_tcc_local_try_log`;
+CREATE TABLE `tb_trans_tcc_local_try_log` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`service_name` varchar(200) NOT NULL COMMENT '服务名',
+    `tx_no` varchar(64) NOT NULL COMMENT '事务id',
+    `create_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `tb_trans_tcc_local_confirm_log`;
+CREATE TABLE `tb_trans_tcc_local_confirm_log` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`service_name` varchar(200) NOT NULL COMMENT '服务名',
+    `tx_no` varchar(64) NOT NULL COMMENT '事务id',
+    `create_time` datetime DEFAULT NULL,
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `tb_trans_tcc_local_cancel_log`;
+CREATE TABLE `tb_trans_tcc_local_cancel_log` (
+	`id` bigint(20) NOT NULL AUTO_INCREMENT,
+	`service_name` varchar(200) NOT NULL COMMENT '服务名',
+    `tx_no` varchar(64) NOT NULL COMMENT '事务id',
+    `create_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

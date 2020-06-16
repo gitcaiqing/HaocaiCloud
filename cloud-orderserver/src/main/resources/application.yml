@@ -82,3 +82,19 @@ logging:
   level:
     com.sinoprof: DEBUG
     jdbc.sqltiming: DEBUG
+
+org:
+  dromara:
+    hmily:
+      serializer: kryo
+      recoverDelayTime: 128
+      retryMax: 30
+      scheduledDelay: 128
+      scheduledThreadMax:  10
+      repositorySupport: db
+      started: false
+      hmilyDbConfig:
+        driverClassName : com.mysql.jdbc.Driver
+        url:  jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&amp;characterEncoding=utf8
+        username: root
+        password: 123456

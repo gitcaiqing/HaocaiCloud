@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 import com.baomidou.mybatisplus.toolkit.*;
-import com.haocai.ticketserver.cloudticketserver.mapper.BaseMapper;
+import com.haocai.base.cloudbase.mapper.BaseMapper;
 import org.apache.ibatis.binding.MapperMethod;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;

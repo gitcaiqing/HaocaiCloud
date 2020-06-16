@@ -3,7 +3,7 @@ package com.haocai.ticketserver.cloudticketserver.service.impl;
 
 import com.haocai.base.cloudbase.entity.BasicUser;
 import com.haocai.base.cloudbase.entity.Page;
-import com.haocai.ticketserver.cloudticketserver.mapper.BasicUserMapper;
+import com.haocai.base.cloudbase.mapper.BasicUserMapper;
 import com.haocai.ticketserver.cloudticketserver.service.BasicUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
