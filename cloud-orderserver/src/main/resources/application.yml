@@ -7,6 +7,8 @@ server:
 spring:
   application:
     name: cloud-orderserver
+  main:
+    allow-bean-definition-overriding: true
   #数据源
   datasource:
     url: jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT
@@ -78,23 +80,36 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+
 logging:
   level:
-    com.sinoprof: DEBUG
-    jdbc.sqltiming: DEBUG
+    root: info
+    org.springframework.web: info
+    org.apache.ibatis: info
+    org.dromara.hmily.bonuspoint: debug
+    org.dromara.hmily.lottery: debug
+    org.dromara.hmily: debug
+    io.netty: info
+  path: "./logs"
 
-org:
-  dromara:
-    hmily:
-      serializer: kryo
-      recoverDelayTime: 128
-      retryMax: 30
-      scheduledDelay: 128
-      scheduledThreadMax:  10
-      repositorySupport: db
-      started: false
-      hmilyDbConfig:
-        driverClassName : com.mysql.jdbc.Driver
-        url:  jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&amp;characterEncoding=utf8
-        username: root
-        password: 123456
+#Ribbon的负载均衡策略
+hmilyOrder :
+  ribbon:
+    NFLoadBalancerRuleClassName:  com.netflix.loadbalancer.RandomRule
+    MaxAutoRetriesNextServer : 0
+
+#org:
+#  dromara:
+#    hmily :
+#      serializer : kryo
+#      recoverDelayTime : 128
+#      retryMax : 30
+#      scheduledDelay : 128
+#      scheduledThreadMax :  10
+#      repositorySupport : db
+#      started: false
+#      hmilyDbConfig :
+#        driverClassName  : com.mysql.jdbc.Driver
+#        url: jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&failOverReadOnly=false&autoReconnect=true
+#        username : root
+#        password : 123456
