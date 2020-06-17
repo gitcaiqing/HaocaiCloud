@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haocai.ticketserver.cloudticketserver.mapper.OmConfigMapper" >
+    <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.TbOmConfig" >
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="config_uuid" property="configUuid" jdbcType="VARCHAR" />
+        <result column="project_type" property="projectType" jdbcType="VARCHAR" />
+        <result column="project_version" property="projectVersion" jdbcType="VARCHAR" />
+        <result column="config_type" property="configType" jdbcType="VARCHAR" />
+        <result column="config_name" property="configName" jdbcType="VARCHAR" />
+        <result column="config_url" property="configUrl" jdbcType="VARCHAR" />
+        <result column="config_content" property="configContent" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="VARCHAR" />
+        <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+        <result column="updated_time" property="updatedTime" jdbcType="TIMESTAMP" />
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List">
+  	    id, config_uuid, project_type, project_version, config_type, config_name, config_url, config_content,
+  	    status, created_time, created_by, updated_time, updated_by, version
+    </sql>
+    <!--根据id查询-->
+    <select id="selectById" resultType="com.haocai.base.cloudbase.entity.TbOmConfig" parameterType="java.lang.Long" >
+        select *
+        from tb_om_config
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 统计数据总数 -->
+    <select id="countData" resultType="java.lang.Integer">
+        select count(*)
+        from tb_om_config
+        where 1 = 1
+        <!--<if test="omDeployPackage.username != null and basicUser.username != ''">
+            and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+        </if>
+        <if test="basicUser.realname != null and basicUser.realname != ''">
+            and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+        </if>-->
+    </select>
+    <!-- 统计所有数据 -->
+    <select id="listData" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from tb_om_config
+        where 1 = 1
+        <!--<if test="basicUser.username != null and basicUser.username != ''">
+            and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+        </if>
+        <if test="basicUser.realname != null and basicUser.realname != ''">
+            and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+        </if>-->
+        <if test="page.sort != null and page.order != null">
+            order by ${page.sort} ${page.order}
+        </if>
+        LIMIT #{page.start},#{page.pageSize}
+
+    </select>
+
+    <insert id="insertSelective" parameterType="com.haocai.base.cloudbase.entity.TbOmConfig" useGeneratedKeys="true">
+        insert into tb_om_config
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="projectType != null" >
+                project_type,
+            </if>
+            <if test="projectVersion != null" >
+                project_version,
+            </if>
+            <if test="configType != null" >
+                config_type,
+            </if>
+            <if test="configName != null" >
+                config_name,
+            </if>
+            <if test="configUrl != null" >
+                config_url,
+            </if>
+            <if test="configContent != null" >
+                config_content,
+            </if>
+            <if test="status != null" >
+                status,
+            </if>
+            <if test="createdTime != null" >
+                created_time,
+            </if>
+            <if test="createdBy != null" >
+                created_by,
+            </if>
+            <if test="updatedTime != null" >
+                updated_time,
+            </if>
+            <if test="updatedBy != null" >
+                upddated_by,
+            </if>
+            <if test="version != null" >
+                upddate,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="configUuid != null" >
+                #{configUuid,jdbcType=VARCHAR},
+            </if>
+            <if test="projectType != null" >
+                #{projectType,jdbcType=VARCHAR},
+            </if>
+            <if test="projectVersion != null" >
+                #{projectVersion,jdbcType=VARCHAR},
+            </if>
+            <if test="configType != null" >
+                #{configType,jdbcType=VARCHAR},
+            </if>
+            <if test="configName != null" >
+                #{configName,jdbcType=VARCHAR},
+            </if>
+            <if test="configUrl != null" >
+                #{configUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="configContent != null" >
+                #{configContent,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createdTime != null" >
+                #{createdTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createdBy != null" >
+                #{createdBy,jdbcType=VARCHAR},
+            </if>
+            <if test="updatedTime != null" >
+                #{updatedTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updatedBy != null" >
+                #{updatedBy,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null" >
+                #{version,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.haocai.base.cloudbase.entity.BasicUser" >
+        update tb_om_config
+        <set >
+            <if test="id != null" >
+                id = #{id,jdbcType=INTEGER},
+            </if>
+            <if test="configUuid != null" >
+                config_uuid = #{configUuid,jdbcType=VARCHAR},
+            </if>
+            <if test="projectType != null" >
+                project_type = #{projectType,jdbcType=VARCHAR},
+            </if>
+            <if test="projectVersion != null" >
+                project_version = #{projectVersion,jdbcType=VARCHAR},
+            </if>
+            <if test="configType != null" >
+                config_type = #{configType,jdbcType=VARCHAR},
+            </if>
+            <if test="configName != null" >
+                config_name = #{configName,jdbcType=VARCHAR},
+            </if>
+            <if test="configUrl != null" >
+                config_url = #{configUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="configContent != null" >
+                config_content = #{configContent,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                status = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createdTime != null" >
+                created_time = #{createdTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createdBy != null" >
+                created_by = #{createdBy,jdbcType=VARCHAR},
+            </if>
+            <if test="updatedTime != null" >
+                updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updatedBy != null" >
+                updated_by = #{updatedBy,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null" >
+                version = #{version,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

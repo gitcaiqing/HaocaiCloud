@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.haocai.ticketserver.cloudticketserver.mapper.OmDeployPackageMapper" >
+    <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.TbOmDeployPackage" >
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="package_uuid" property="packageUuid" jdbcType="VARCHAR" />
+        <result column="dolphin_version" property="dolphinVersion" jdbcType="VARCHAR" />
+        <result column="project_type" property="projectType" jdbcType="VARCHAR" />
+        <result column="project_version" property="projectVersion" jdbcType="VARCHAR" />
+        <result column="pack_name" property="packName" jdbcType="VARCHAR" />
+        <result column="pack_url" property="packUrl" jdbcType="VARCHAR" />
+        <result column="url_expired" property="urlExpired" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="VARCHAR" />
+        <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+        <result column="created_by" property="createdBy" jdbcType="VARCHAR" />
+        <result column="updated_time" property="updatedTime" jdbcType="TIMESTAMP" />
+        <result column="updated_by" property="updatedBy" jdbcType="VARCHAR" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List">
+  	    id, package_uuid, dolphin_version, project_type, project_version, pack_name, pack_url, url_expired,
+  	    status, created_time, created_by, updated_time, updated_by, version
+    </sql>
+    <!--根据id查询-->
+    <select id="selectById" resultType="com.haocai.base.cloudbase.entity.TbOmDeployPackage" parameterType="java.lang.Long" >
+        select *
+        from tb_om_deploypackage
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 统计数据总数 -->
+    <select id="countData" resultType="java.lang.Integer">
+        select count(*)
+        from tb_om_deploypackage
+        where 1 = 1
+        <!--<if test="omDeployPackage.username != null and basicUser.username != ''">
+            and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+        </if>
+        <if test="basicUser.realname != null and basicUser.realname != ''">
+            and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+        </if>-->
+    </select>
+    <!-- 统计所有数据 -->
+    <select id="listData" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/>
+        from tb_om_deploypackage
+        where 1 = 1
+        <!--<if test="basicUser.username != null and basicUser.username != ''">
+            and username like concat('%',#{basicUser.username,jdbcType=VARCHAR},'%')
+        </if>
+        <if test="basicUser.realname != null and basicUser.realname != ''">
+            and realname like concat('%',#{basicUser.realname,jdbcType=VARCHAR},'%')
+        </if>-->
+        <if test="page.sort != null and page.order != null">
+            order by ${page.sort} ${page.order}
+        </if>
+        LIMIT #{page.start},#{page.pageSize}
+
+    </select>
+
+    <insert id="insertSelective" parameterType="com.haocai.base.cloudbase.entity.TbOmDeployPackage" >
+        insert into tb_om_deploypackage
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="packageUuid != null" >
+                package_uuid,
+            </if>
+            <if test="dolphinVersion != null" >
+                dolphin_version,
+            </if>
+            <if test="projectType != null" >
+                project_type,
+            </if>
+            <if test="projectVersion != null" >
+                project_version,
+            </if>
+            <if test="packName != null" >
+                pack_name,
+            </if>
+            <if test="packUrl != null" >
+                pack_url,
+            </if>
+            <if test="urlExpired != null" >
+                url_expired,
+            </if>
+            <if test="status != null" >
+                status,
+            </if>
+            <if test="createdTime != null" >
+                created_time,
+            </if>
+            <if test="createdBy != null" >
+                created_by,
+            </if>
+            <if test="updatedTime != null" >
+                updated_time,
+            </if>
+            <if test="updatedBy != null" >
+                upddated_by,
+            </if>
+            <if test="version != null" >
+                upddate,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="packageUuid != null" >
+                #{packageUuid,jdbcType=VARCHAR},
+            </if>
+            <if test="dolphinVersion != null" >
+                #{dolphinVersion,jdbcType=VARCHAR},
+            </if>
+            <if test="projectType != null" >
+                #{projectType,jdbcType=VARCHAR},
+            </if>
+            <if test="projectVersion != null" >
+                #{projectVersion,jdbcType=VARCHAR},
+            </if>
+            <if test="packName != null" >
+                #{packName,jdbcType=VARCHAR},
+            </if>
+            <if test="packUrl != null" >
+                #{packUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="urlExpired != null" >
+                #{urlExpired,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null" >
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createdTime != null" >
+                #{createdTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createdBy != null" >
+                #{createdBy,jdbcType=VARCHAR},
+            </if>
+            <if test="updatedTime != null" >
+                #{updatedTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updatedBy != null" >
+                #{updatedBy,jdbcType=VARCHAR},
+            </if>
+            <if test="version != null" >
+                #{version,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+</mapper>

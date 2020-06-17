@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haocai.base.cloudbase.mapper.TransTccAccountInfoMapper">
+  <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.TransTccAccountInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_no" jdbcType="VARCHAR" property="accountNo" />
+    <result column="account_password" jdbcType="VARCHAR" property="accountPassword" />
+    <result column="account_balance" jdbcType="BIGINT" property="accountBalance" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, account_name, account_no, account_password, account_balance
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from tb_trans_tcc_account_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from tb_trans_tcc_account_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.haocai.base.cloudbase.entity.TransTccAccountInfo">
+    insert into tb_trans_tcc_account_info (id, account_name, account_no, 
+      account_password, account_balance)
+    values (#{id,jdbcType=BIGINT}, #{accountName,jdbcType=VARCHAR}, #{accountNo,jdbcType=VARCHAR}, 
+      #{accountPassword,jdbcType=VARCHAR}, #{accountBalance,jdbcType=BIGINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.haocai.base.cloudbase.entity.TransTccAccountInfo">
+    insert into tb_trans_tcc_account_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="accountName != null">
+        account_name,
+      </if>
+      <if test="accountNo != null">
+        account_no,
+      </if>
+      <if test="accountPassword != null">
+        account_password,
+      </if>
+      <if test="accountBalance != null">
+        account_balance,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="accountName != null">
+        #{accountName,jdbcType=VARCHAR},
+      </if>
+      <if test="accountNo != null">
+        #{accountNo,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPassword != null">
+        #{accountPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="accountBalance != null">
+        #{accountBalance,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.haocai.base.cloudbase.entity.TransTccAccountInfo">
+    update tb_trans_tcc_account_info
+    <set>
+      <if test="accountName != null">
+        account_name = #{accountName,jdbcType=VARCHAR},
+      </if>
+      <if test="accountNo != null">
+        account_no = #{accountNo,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPassword != null">
+        account_password = #{accountPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="accountBalance != null">
+        account_balance = #{accountBalance,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.haocai.base.cloudbase.entity.TransTccAccountInfo">
+    update tb_trans_tcc_account_info
+    set account_name = #{accountName,jdbcType=VARCHAR},
+      account_no = #{accountNo,jdbcType=VARCHAR},
+      account_password = #{accountPassword,jdbcType=VARCHAR},
+      account_balance = #{accountBalance,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="getAmountInfoByAmountNo" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"></include>
+    from tb_trans_tcc_account_info
+    where account_no = #{accountNo,jdbcType=VARCHAR}
+  </select>
+</mapper>
