@@ -88,7 +88,8 @@ logging:
     org.dromara.hmily.lottery: debug
     org.dromara.hmily: debug
     io.netty: info
-  path: "./logs"
+    com.haocai.base.cloudbase.mapper: debug
+  path: "./cloud-ticketserver-logs"
 
 #Ribbon的负载均衡策略
 hmilyOrder :

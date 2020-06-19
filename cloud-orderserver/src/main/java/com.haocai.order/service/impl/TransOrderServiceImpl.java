@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
@@ -71,5 +72,250 @@ public class TransOrderServiceImpl implements TransOrderService {
     @Override
     public TransTask selectTransTaskByUuid(String taskUuid) {
         return transTaskMapper.selectByUuid(taskUuid);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void addRequired1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void addRequired2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void addRequired2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void addRequiredNew1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void addRequiredNew2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void addRequiredNew2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void addNested1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void addNested2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void addNested2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public void addSupports1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public void addSupports2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public void addSupports2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+    @Override
+    public void addNoSupports1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    public void addNoSupports2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    public void addNoSupports2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public void addMandatory1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public void addMandatory2(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00002");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.MANDATORY)
+    public void addMandatory2Exception(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NEVER)
+    public void addNever1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U00001");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NOT_SUPPORTED)
+    public void addNotSupportedException1(Date now) {
+        TransOrder transOrder = new TransOrder();
+        transOrder.setOrderNo("R"+now.getTime());
+        transOrder.setAmount(1000L);
+        transOrder.setUserId("U000022");
+        transOrder.setCreatedTime(now);
+        transOrder.setStatus(StatusEnum.A.getValue());
+        transOrderMapper.insertSelective(transOrder);
+        throw new RuntimeException();
     }
 }
