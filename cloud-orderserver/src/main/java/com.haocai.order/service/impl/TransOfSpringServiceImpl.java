@@ -8,6 +8,7 @@ import com.haocai.order.service.TransOrderService;
 import org.dromara.hmily.annotation.PropagationEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -86,7 +87,8 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
         //testPropagationSupports 方法上未加 @Transactional(propagation = Propagation.REQUIRED)
 
         //外部方法没有添加事务 addSupports1 和 addSupports2Exception
-        // 即使添加事务注解 @Transactional(propagation = Propagation.SUPPORTS) 也是非事务的，所以addSupports2Exception不会回滚
+        // 即使添加事务注解 @Transactional(propagation = Propagation.SUPPORTS) 也是非事务的，
+        // 所以addSupports2Exception不会回滚
         //transOrderService.addSupports1(now);
         //transOrderService.addSupports2Exception(now);
 
@@ -151,7 +153,7 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
         //throw new RuntimeException();
 
 
-        //testPropagationRequireNew 方法上未加 @Transactional(propagation = Propagation.REQUIRED)
+        //testPropagationRequireNew 方法上加 @Transactional(propagation = Propagation.REQUIRED)
 
         //正常插入
         //transOrderService.addRequiredNew1(now);
@@ -168,7 +170,7 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
         transOrderService.addRequired1(now);
         //正常插入
         transOrderService.addRequiredNew2(now);
-        //此处异常以上事务正常回滚，说明：外围方法开启事务，内部方法为独立的事务，异常被catch 不被外部感知，所以 addRequired1 不会回滚
+        //此处异常以上事务正常插入，说明：外围方法开启事务，内部方法为独立的事务，异常被catch 不被外部感知，所以 addRequired1 不会回滚
         try {
             transOrderService.addRequiredNew2Exception(now);
         } catch (Exception e) {
@@ -233,7 +235,7 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
     public void testPropagationNested() {
         Date now = new Date();
 
-        //testPropagationNested 方法上未加 @Transactional(propagation = Propagation.NESTED)
+        //testPropagationNested 方法上未加 @Transactional(propagation = Propagation.REQUIRED)
 
         //正常插入
         //transOrderService.addNested1(now);
@@ -245,10 +247,11 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
 
         //正常插入
         //transOrderService.addNested1(now);
-        //外围方法没有事务 此方法再独立的事务中运行 抛出异常会回滚插入
+        //外围方法没有事务 此方法再独立的事务中运行 抛出异常不会回滚插入
         //addNested2Exception(now);
 
         //testPropagationNested 方法上加 @Transactional(propagation = Propagation.REQUIRED)
+
         //回滚
         //transOrderService.addNested1(now);
         //回滚
@@ -266,7 +269,7 @@ public class TransOfSpringServiceImpl implements TransOfSpringService {
         transOrderService.addNested1(now);
         transOrderService.addNested2(now);
         //回滚
-        //外围方法开启事务，内部事务为外围事务的子事务，内部方法抛出异常回滚，进行catch 外围方法不感知 单独对子事务回滚， 外部事务部回滚。
+        //外围方法开启事务，内部事务为外围事务的子事务，内部方法抛出异常回滚，进行catch 外围方法不感知 单独对子事务回滚， 外部事务部不回滚。
         try {
             transOrderService.addNested2Exception(now);
         } catch (Exception e) {

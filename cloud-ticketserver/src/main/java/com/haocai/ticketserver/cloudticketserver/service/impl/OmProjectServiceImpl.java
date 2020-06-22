@@ -54,7 +54,7 @@ public class OmProjectServiceImpl implements OmProjectService {
             omProject.setProjectUuid(UuidUtil.getUuid());
             omProject.setStatus(StatusEnum.A);
             omProject.setCreatedTime(now);
-            omProject.setCompleteTime(now);
+            //omProject.setCompleteTime(now);
             if(DeploymentStatusEnum.END.getValue().equals(omProject.getDeploymentStatus())
                 //&& AcceptanceStatusEnum.ACCEPTED.getValue().equals(omProject.getAcceptanceStatus()))
             ){

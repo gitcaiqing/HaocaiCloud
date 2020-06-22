@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.haocai.ticketserver.cloudticketserver.mapper.OmProjectMapper">
+<mapper namespace="com.haocai.base.cloudbase.mapper.OmProjectMapper">
   <resultMap id="BaseResultMap" type="com.haocai.base.cloudbase.entity.OmProject">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="project_uuid" jdbcType="VARCHAR" property="projectUuid" />
@@ -290,21 +290,33 @@
     <if test="omProjectPageDTO.acceptanceStatus != null">
       and acceptance_status = #{omProjectPageDTO.acceptanceStatus}
     </if>
-    /*创建时间*/
     <if test="omProjectPageDTO.createdTimeStart != null">
       and created_time <![CDATA[>=]]> #{omProjectPageDTO.createdTimeStart,jdbcType=TIMESTAMP}
     </if>
     <if test="omProjectPageDTO.createdTimeEnd != null">
       and created_time <![CDATA[<=]]> #{omProjectPageDTO.createdTimeEnd,jdbcType=TIMESTAMP}
     </if>
-    /*完成时间*/
-    <if test="omProjectPageDTO.completeTimeStart != null">
-      and complete_time <![CDATA[>=]]> #{omProjectPageDTO.completeTimeStart,jdbcType=TIMESTAMP}
-    </if>
-    <if test="omProjectPageDTO.completeTimeEnd != null">
-      and complete_time <![CDATA[<=]]> #{omProjectPageDTO.completeTimeEnd,jdbcType=TIMESTAMP}
-    </if>
-
+    <choose>
+      <when test="omProjectPageDTO.completeTimeStart != null and omProjectPageDTO.completeTimeEnd == null">
+        and complete_time <![CDATA[>=]]> #{omProjectPageDTO.completeTimeStart,jdbcType=TIMESTAMP}
+      </when>
+      <when test="omProjectPageDTO.completeTimeStart == null and omProjectPageDTO.completeTimeEnd != null">
+        and complete_time <![CDATA[<=]]> #{omProjectPageDTO.completeTimeEnd,jdbcType=TIMESTAMP}
+      </when>
+      <when test="omProjectPageDTO.completeTimeStart != null and omProjectPageDTO.completeTimeEnd != null">
+        and (
+          (
+            complete_time <![CDATA[>=]]> #{omProjectPageDTO.completeTimeStart,jdbcType=TIMESTAMP}
+            and
+            complete_time <![CDATA[<=]]> #{omProjectPageDTO.completeTimeEnd,jdbcType=TIMESTAMP}
+          )
+          or
+          (
+              complete_time is null or complete_time = ''
+          )
+        )
+      </when>
+    </choose>
 
   </sql>
 

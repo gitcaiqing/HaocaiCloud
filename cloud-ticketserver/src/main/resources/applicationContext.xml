@@ -44,7 +44,7 @@
          <property name="hmilyDbConfig">
              <bean class="org.dromara.hmily.common.config.HmilyDbConfig">
                  <property name="url"
-                           value="jdbc:mysql://localhost:3306/db_haocaicloud?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=GMT&amp;failOverReadOnly=false&amp;autoReconnect=true"/>
+                           value="jdbc:mysql://10.67.8.78:3306/db_haocaicloud?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=GMT&amp;failOverReadOnly=false&amp;autoReconnect=true"/>
                  <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
                  <property name="username" value="root"/>
                  <property name="password" value="123456"/>
