@@ -156,7 +156,7 @@ CREATE TABLE tb_om_project(
 );
 INSERT INTO tb_om_project(id, project_uuid,work_id,project_type,title, communication_group, docking_people, deployment_status,acceptance_status,memo,complete_time,
 	status, created_time,created_by,updated_time,updated_by,version ) values
-(1, 'uuid01','104','CTSERVER','连云港公安执法规范化平台新增部署江苏省科达地图服务（KMap-Server 未加鉴权）','连云港公安执法平台', '李绪栋','start','unsend','备注','2020-06-01','A','2020-06-01','caiqing',null,null,0);
+(1, 'uuid01','104','CTSERVER','连云港公安执法规范化平台新增部署江苏省科达地图服务（KMap-Server 未加鉴权）','连云港公安执法平台', '李绪栋','START','UNSEND','备注','2020-06-01','A','2020-06-01','caiqing',null,null,0);
 
 
 

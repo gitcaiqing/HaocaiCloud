@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-hfront" />
-        <module name="cloud-eurekaserver" />
-        <module name="cloudmybatisgenerator" />
-        <module name="cloud-ticketserver" />
-        <module name="cloud-base" />
-        <module name="cloud-ticketfront" />
         <module name="cloud-orderserver" />
+        <module name="cloudmybatisgenerator" />
+        <module name="cloud-base" />
+        <module name="cloud-eurekaserver" />
+        <module name="cloud-ticketfront" />
+        <module name="cloud-ticketserver" />
+        <module name="cloud-mybatisgenerator" />
+        <module name="cloud-hfront" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

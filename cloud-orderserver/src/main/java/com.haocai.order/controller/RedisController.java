@@ -6,12 +6,8 @@ import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.order.config.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.Objects;
 
 /**
  * @Description TODO
@@ -37,14 +33,14 @@ public class RedisController {
 
     @RequestMapping("/get/basic")
     @ResponseBody
-    public ResponseMessage<Object> getUser(){
+    public ResponseMessage<BasicUser> getUser(){
         BasicUser basicUser = JSON.parseObject(redisUtil.get("basic").toString(), BasicUser.class);
         return ResponseMessage.ok(basicUser);
     }
 
     @RequestMapping("/get/name")
     @ResponseBody
-    public ResponseMessage<Object> getName(){
+    public ResponseMessage getName(){
         return ResponseMessage.ok(redisUtil.get("name").toString());
     }
 }

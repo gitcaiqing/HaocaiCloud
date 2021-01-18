@@ -10,6 +10,7 @@ import com.haocai.base.cloudbase.mapper.TransTaskHisMapper;
 import com.haocai.base.cloudbase.util.ValidUtil;
 import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.ticketserver.cloudticketserver.service.TransLearningCourseService;
+import lombok.extern.flogger.Flogger;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;

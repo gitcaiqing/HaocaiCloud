@@ -1,30 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cloud-mybatisgenerator" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cloud-orderserver" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cloud-ticketfront" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:maven" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:cloud-ticketserver" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e0cae832-3c5c-45c5-b6fe-fe9652bdaa1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/DefaultView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/SecondKillGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/SecondKillOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/enums/TopicEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/SecondKillGoodsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/SecondKillOrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/vo/SecondKillVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/SecondKillGoodsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/SecondKillOrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/SecondKillController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/kafka/SecondKillListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillGoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillGoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/seckill/SecondKillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-orderserver-logs/spring.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/logs/spring.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-orderserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-ticketfront/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketfront/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-ticketserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/kafka/OrderListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/kafka/OrderListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/db/db_haocaicloud.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/db/db_haocaicloud.sql" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-eurekaserver/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-hfront/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-wxfront/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-ticketserver/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-base/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-ticketfront/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-ticketfeign/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-mybatisgenerator/target/" />
-    <ignored path="$PROJECT_DIR$/cloud-orderserver/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,296 +105,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="HaocaiCloud" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransTccAccountInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="37" column="44" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/kd/OmExportController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/ProjectController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/DefaultView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-starter-data-redis/1.5.8.RELEASE/spring-boot-starter-data-redis-1.5.8.RELEASE.pom">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="40" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/serializer/StringRedisSerializer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="551" column="7" lean-forward="true" selection-start-line="551" selection-start-column="7" selection-end-line="551" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2088">
-              <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1551#1552#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/com/alibaba/fastjson/JSON.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2544">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/vo/ResponseMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOfSpringController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/DefaultValueOperations.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14424">
-              <caret line="736" column="22" selection-start-line="736" selection-start-column="11" selection-end-line="736" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/OmProjectMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketserver/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/CloudTicketfrontApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-eurekaserver/src/main/java/com/haocai/eurekaserver/CloudEurekaserverApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#440#441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/CloudOrderServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-              <folding>
-                <element signature="e#1588#1589#0" expanded="true" />
-                <element signature="e#1666#1667#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -333,358 +116,54 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>insertSelective</find>
-      <find>aMinuteAgoTime</find>
-      <find>listByTime</find>
-      <find>byU</find>
-      <find>TransTaskHisMapper</find>
-      <find>selectByUuid</find>
-      <find>com.haocai.mybatisGenerator.entity</find>
-      <find>BaseResultMap</find>
-      <find>mongodb</find>
-      <find>fe</find>
-      <find>feign</find>
-      <find>TRANSACTION_CONTEXT_LOCAL</find>
-      <find>HmilyFeignInterceptor</find>
-      <find>recoverDelayTime</find>
-      <find>hmilyInitService</find>
-      <find>getAmountInfoByAmountNo</find>
-      <find>hml</find>
-      <find>jdbc</find>
-      <find>HmilyInitService</find>
-      <find>hm</find>
-      <find>kaf</find>
-      <find>COUNT</find>
-      <find>omProjectPageDTO</find>
-      <find>ticketserver.cloudticketserver</find>
-      <find>OmProjectPageDTO</find>
-      <find>localhost</find>
-      <find>hmil</find>
-      <find>9</find>
-      <find>redis</find>
-      <find>hasKey</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>com.haocai.base.cloudbase.entity.OmProject</replace>
-      <replace>OmProject</replace>
-      <replace>com.haocai.base.cloudbase.entity.TransLearningCourse</replace>
-      <replace>com.haocai.base.cloudbase.entity</replace>
-      <replace>base.cloudbase</replace>
-      <replace>redisTemplate</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp</dir>
-      <dir>D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-mybatisgenerator</dir>
-      <dir>D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketserver</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/TransTccAccountInfo.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/db/db_haocaicloud.sql" />
-        <option value="$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/readme.text" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransTccAccountInfoService.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/TransTccTryLog.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/TransTccAccountInfoMapper.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/TransTccCancelLog.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/entity/TransTccConfirmLog.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/schedule/TransOrderSchedule.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/DatabaseConfiguration.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/TransTccAccountInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/trans/TransTccAmountInfoController.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/Feign/TransTccAmountInfoFeignService.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/TransTccAccountInfoService.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransTccAccountInfoController.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/CloudOrderServerApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransTccAccountInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/CloudTicketserverApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/TransTccTryLogMapper.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/TransTccTryLogMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/TransTccConfirmLogMapper.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/TransTccCancelLogMapper.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/TransTccConfirmLogMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/TransTccCancelLogMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/TransTccAccountInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOfSpring.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransOfSpringService.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOfSpringController.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransOrderService.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/OmProjectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/BasicUserMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/OmConfigMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/OmDeployPackageMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/OmExporthistoryMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/TicketCategoryMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/OmProjectMapper.xml" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransOfSpringServiceImpl.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketserver/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/DefaultView.java" />
-        <option value="$PROJECT_DIR$/cloud-ticketfront/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/util/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisConfig.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" />
-        <option value="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisUtil.java" />
-      </list>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\soft\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1852" />
-    <option name="y" value="201" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1ir9Qmy83I4bjvUqn4pMaUQalZY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="eurekaserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-eurekaserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com.haocai.order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com.haocai.order" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com.haocai.order" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-orderserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cloudticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="kd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-ticketserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HaocaiCloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HaocaiCloud" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-ticketserver/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\mapper" />
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\entity" />
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\resources\mapper" />
       <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketserver\src\main\resources" />
       <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-orderserver\src\main\resources" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-base\src\main\resources\mapper" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-mybatisgenerator\src\main\resources\sql" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.haocai.base.cloudbase.mapper" />
@@ -700,18 +179,6 @@
       <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF" />
       <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF\jsp\views" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CloudOrderServerApplication">
     <configuration name="CloudTicketfrontApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -866,6 +333,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -914,6 +382,27 @@
       <workItem from="1600134493999" duration="17732000" />
       <workItem from="1600309641586" duration="1201000" />
       <workItem from="1600672327773" duration="321000" />
+      <workItem from="1602654838525" duration="1461000" />
+      <workItem from="1602748294879" duration="1484000" />
+      <workItem from="1603163847737" duration="142000" />
+      <workItem from="1603180275634" duration="3766000" />
+      <workItem from="1603257994072" duration="2502000" />
+      <workItem from="1603336563005" duration="3433000" />
+      <workItem from="1603421134595" duration="1117000" />
+      <workItem from="1603853534889" duration="139000" />
+      <workItem from="1603853777501" duration="620000" />
+      <workItem from="1603939003392" duration="1277000" />
+      <workItem from="1605018284362" duration="150000" />
+      <workItem from="1605149879494" duration="4373000" />
+      <workItem from="1605166230211" duration="9097000" />
+      <workItem from="1605232212093" duration="4909000" />
+      <workItem from="1605582588811" duration="606000" />
+      <workItem from="1605664592714" duration="5394000" />
+      <workItem from="1606097126518" duration="2426000" />
+      <workItem from="1606712844652" duration="4719000" />
+      <workItem from="1609900786028" duration="599000" />
+      <workItem from="1610934796763" duration="98000" />
+      <workItem from="1610935861247" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1588075032705</created>
@@ -1107,94 +596,20 @@
     <option name="localTasksCounter" value="28" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495129000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7995521" visible="true" weight="0.18996799" />
-      <window_info id="Structure" order="1" sideWeight="0.20044793" side_tool="true" visible="true" weight="0.18996799" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.12743363" side_tool="true" weight="0.19936034" />
-      <window_info auto_hide="true" x="2650" y="150" width="460" height="740" id="Web" order="7" sideWeight="0.17027026" side_tool="true" weight="0.24520256" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994664" weight="0.37402016" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.82390606" weight="0.38857782" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.86232656" visible="true" weight="0.2418813" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4994664" weight="0.32922733" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49839914" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8633938" weight="0.38969764" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.13767342" side_tool="true" weight="0.5744681" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" sideWeight="0.4994664" weight="0.32922733" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49626467" weight="0.16013438" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4994664" weight="0.32922733" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.2497332" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13820705" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8743719" visible="true" weight="0.19936034" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.12562814" side_tool="true" weight="0.19936034" />
-      <window_info auto_hide="true" x="2650" y="150" width="460" height="740" id="Web" order="7" sideWeight="0.17027026" side_tool="true" weight="0.24520256" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.19265033" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16926503" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3351893" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.33964366" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.13432837" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
@@ -1202,6 +617,92 @@
     <MESSAGE value="hmily 分布式事务案例" />
     <MESSAGE value="spring transaction 传播行为" />
     <option name="LAST_COMMIT_MESSAGE" value="spring transaction 传播行为" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="372" y="42" width="1089" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605165720451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="372" y="42" width="1089" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605165720451" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1605180239971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605180239971" />
+    <state x="647" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605164988794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="647" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1605164988794" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605166011003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605166011003" />
+    <state width="490" height="438" key="DebuggerActiveHint" timestamp="1605685636824">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="490" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605685636824" />
+    <state x="697" y="167" key="FileChooserDialogImpl" timestamp="1605165697244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="697" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605165697244" />
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1606115922716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
+    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1606115922716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
+    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1606115922716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
+    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1606115922716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
+    <state width="1493" height="347" key="GridCell.Tab.1.bottom" timestamp="1606115921986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
+    <state width="1493" height="347" key="GridCell.Tab.1.center" timestamp="1606115921986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
+    <state width="1493" height="347" key="GridCell.Tab.1.left" timestamp="1606115921986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
+    <state width="1493" height="347" key="GridCell.Tab.1.right" timestamp="1606115921986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
+    <state width="1493" height="347" key="GridCell.Tab.2.bottom" timestamp="1606115921987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
+    <state width="1493" height="347" key="GridCell.Tab.2.center" timestamp="1606115921987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
+    <state width="1493" height="347" key="GridCell.Tab.2.left" timestamp="1606115921986">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
+    <state width="1493" height="347" key="GridCell.Tab.2.right" timestamp="1606115921987">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="347" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1603180856298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603180856298" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605169181960">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1605169181960" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605687807146">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605687807146" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1213,391 +714,6 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.5.RELEASE/spring-beans-5.2.5.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE-sources.jar!/org/springframework/util/ClassUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5904">
-          <caret line="284" column="29" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="91" column="30" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="365" selection-start-line="365" selection-end-line="366" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransOfSpringService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransOfSpringServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6011">
-          <caret line="269" column="42" lean-forward="true" selection-start-line="267" selection-start-column="5" selection-end-line="269" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransOrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/schedule/TransOrderSchedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="46" column="56" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransOrderServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="52" column="46" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/trans/LearnCourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/TransLearningCourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/TransLearningCourseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="73" column="9" lean-forward="true" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/kafka/OrderListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="48" selection-start-column="12" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/kafka/LearningCourseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="36" selection-start-column="16" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/BasicUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/TransTccAccountInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/TransTccAccountInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2232">
-          <caret line="109" column="76" selection-start-line="109" selection-start-column="70" selection-end-line="109" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/trans/TransTccAmountInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/TransTccAccountInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/service/impl/TransTccAccountInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/util/RedisUtil.java" />
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransTccAccountInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/src/main/java/com/haocai/ticketserver/cloudticketserver/controller/kd/OmExportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/controller/kd/DefaultView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-starter-data-redis/1.5.8.RELEASE/spring-boot-starter-data-redis-1.5.8.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/serializer/StringRedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/serializer/Jackson2JsonRedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/ListOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2088">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/alibaba/fastjson/1.2.54/fastjson-1.2.54.jar!/com/alibaba/fastjson/JSON.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2544">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/vo/ResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="74" column="41" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOfSpringController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/TransOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/DefaultValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.8.RELEASE/spring-data-redis-1.8.8.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14424">
-          <caret line="736" column="22" selection-start-line="736" selection-start-column="11" selection-end-line="736" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/OmProjectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-mybatisgenerator/src/main/resources/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketserver/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/java/com/haocai/ticketfront/cloudticketfront/CloudTicketfrontApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-ticketfront/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-eurekaserver/src/main/java/com/haocai/eurekaserver/CloudEurekaserverApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/CloudOrderServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding>
-            <element signature="e#1588#1589#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="551" column="7" lean-forward="true" selection-start-line="551" selection-start-column="7" selection-end-line="551" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
