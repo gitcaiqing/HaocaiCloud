@@ -16,4 +16,6 @@ public interface SecondKillGoodsMapper extends BaseMapper<SecondKillGoods> {
     int updateByPrimaryKeySelective(SecondKillGoods record);
 
     int updateByPrimaryKey(SecondKillGoods record);
+
+    int updateByPrimaryKeyAndVersion(SecondKillGoods record);
 }

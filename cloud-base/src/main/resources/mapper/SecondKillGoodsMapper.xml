@@ -101,4 +101,15 @@
       version = #{version,jdbcType=INTEGER}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <update id="updateByPrimaryKeyAndVersion" parameterType="com.haocai.base.cloudbase.entity.SecondKillGoods">
+    update tb_secondkill_goods
+    set name = #{name,jdbcType=VARCHAR},
+      count = #{count,jdbcType=BIGINT},
+      remain = #{remain,jdbcType=BIGINT},
+      sale = #{sale,jdbcType=BIGINT},
+      version = version + 1,
+    where id = #{id,jdbcType=BIGINT}
+    and version = #{version,jdbcType=INTEGER}
+  </update>
 </mapper>
