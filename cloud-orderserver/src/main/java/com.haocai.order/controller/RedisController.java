@@ -1,13 +1,19 @@
 package com.haocai.order.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.esotericsoftware.minlog.Log;
 import com.haocai.base.cloudbase.entity.BasicUser;
 import com.haocai.base.cloudbase.vo.ResponseMessage;
 import com.haocai.order.config.RedisUtil;
+import com.haocai.order.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.security.Key;
 
 /**
  * @Description TODO
@@ -20,6 +26,9 @@ public class RedisController {
 
     @Autowired
     private RedisUtil redisUtil;
+
+    @Autowired
+    private RedisService redisService;
 
     @RequestMapping("/set")
     @ResponseBody
@@ -38,9 +47,28 @@ public class RedisController {
         return ResponseMessage.ok(basicUser);
     }
 
-    @RequestMapping("/get/name")
+    @RequestMapping("/get/{name}")
     @ResponseBody
-    public ResponseMessage getName(){
-        return ResponseMessage.ok(redisUtil.get("name").toString());
+    public ResponseMessage getName(@PathVariable(value = "name") String name){
+        return ResponseMessage.ok(redisUtil.get(name));
+    }
+
+    /**
+     * http://localhost:8400/redis/lock
+     * @return
+     */
+    @RequestMapping("/lock")
+    @ResponseBody
+    public ResponseMessage testRedisLock(){
+        for(int i=0; i<1; i++){
+
+            new Thread(()->{
+                String identifier = redisService.lockWithTimeout("resource", 5000, 5000);
+                System.out.println(Thread.currentThread().getName()+"获取锁:"+identifier);
+                redisService.releaseLock("resource", identifier);
+            }).start();
+        }
+
+        return ResponseMessage.ok();
     }
 }

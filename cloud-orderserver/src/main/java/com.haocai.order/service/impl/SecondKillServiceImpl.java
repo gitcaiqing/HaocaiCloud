@@ -2,6 +2,7 @@ package com.haocai.order.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.JsonObject;
+import com.haocai.base.cloudbase.entity.SecondKillGoods;
 import com.haocai.base.cloudbase.entity.SecondKillOrder;
 import com.haocai.base.cloudbase.enums.TopicEnum;
 import com.haocai.base.cloudbase.exception.BusinessException;
@@ -45,7 +46,6 @@ public class SecondKillServiceImpl implements SecondKillService {
             if(!secondKillGoodsService.reduceStock(goodsId, 1)){
                 return ResponseMessage.error("抢购失败");
             }
-
             //方案1：直接创建订单
             //注：下单失败则回滚扣减的库存1
             SecondKillOrder order = secondKillOrderService.create(goodsId, name, phone);
@@ -54,6 +54,33 @@ public class SecondKillServiceImpl implements SecondKillService {
             //发送异步消息：预扣减库存成功，创建订单
             //SecondKillVO secondKillVO = new SecondKillVO(goodsId, name, phone);
             //kafkaTemplate.send("topic_second_kill", JSONObject.toJSONString(secondKillVO));
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BusinessException("抢购失败");
+        }
+        return ResponseMessage.ok();
+    }
+
+    /**
+     * 校验库存信息，库存充足的情况下，下单信息推送至kafka,监听kafka消息异步扣减库存并创建订单
+     * @param goodsId
+     * @param name
+     * @param phone
+     * @return
+     */
+    @Override
+    @Transactional
+    public ResponseMessage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   createOrderWithRedisAndKafka(Long goodsId, String name, Long phone) {
+
+        //校验库存
+        SecondKillGoods secondKillGoods = secondKillGoodsService.checkGoodsRemain(goodsId, 1);
+        if(secondKillGoods == null){
+            throw new BusinessException("抢购失败");
+        }
+        //推送kafka消息
+        SecondKillVO secondKillVO = new SecondKillVO(goodsId, name, phone);
+        try {
+            kafkaTemplate.send("topic_second_kill", JSONObject.toJSONString(secondKillVO));
         } catch (Exception e) {
             e.printStackTrace();
             throw new BusinessException("抢购失败");

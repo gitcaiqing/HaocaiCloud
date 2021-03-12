@@ -108,7 +108,7 @@
       count = #{count,jdbcType=BIGINT},
       remain = #{remain,jdbcType=BIGINT},
       sale = #{sale,jdbcType=BIGINT},
-      version = version + 1,
+      version = version + 1
     where id = #{id,jdbcType=BIGINT}
     and version = #{version,jdbcType=INTEGER}
   </update>

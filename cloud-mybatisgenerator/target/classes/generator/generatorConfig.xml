@@ -5,7 +5,7 @@
 <generatorConfiguration>
          <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
 
-         <classPathEntry  location="D:\m2\repo\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar"/>
+         <classPathEntry  location="D:\soft\mavenRepo\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar"/>
 
          <context id="MySqlTables"  targetRuntime="MyBatis3">
 
@@ -79,7 +79,11 @@
                     enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                     selectByExampleQueryId="false"></table>-->
 
-             <table tableName="tb_secondkill_goods" domainObjectName="SecondKill_goods" enableCountByExample="false"
+             <table tableName="tb_secondkill_goods" domainObjectName="SecondKillGoods" enableCountByExample="false"
+                    enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
+                    selectByExampleQueryId="false"></table>
+
+             <table tableName="tb_secondkill_order" domainObjectName="SecondKillOrder" enableCountByExample="false"
                     enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                     selectByExampleQueryId="false"></table>
 

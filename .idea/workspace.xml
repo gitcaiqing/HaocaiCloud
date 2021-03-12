@@ -68,11 +68,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0cae832-3c5c-45c5-b6fe-fe9652bdaa1b" name="Default Changelist" comment="spring transaction 传播行为">
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/config/RedisPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/SecondKillGoodsPreheatRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/RedisLimit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/RedisServerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/SecondKillGoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-base/src/main/java/com/haocai/base/cloudbase/mapper/SecondKillGoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-base/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/SecondKillGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-base/src/main/resources/mapper/SecondKillGoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-mybatisgenerator/target/classes/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-mybatisgenerator/target/classes/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/logs/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/logs/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/RedisController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/SecondKillController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/controller/SecondKillController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/kafka/SecondKillListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/kafka/SecondKillListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillGoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/SecondKillService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillGoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillOrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/controller/RedisController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/controller/RedisController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/controller/SecondKillController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/controller/SecondKillController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/kafka/SecondKillListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/kafka/SecondKillListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillGoodsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/SecondKillService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillGoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-orderserver/target/classes/com/haocai/order/service/impl/SecondKillServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,15 +157,15 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\mapper" />
-      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\entity" />
-      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\resources\mapper" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketserver\src\main\resources" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-orderserver\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json\2_7_0" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json2_7_0" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF\jsp\views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.haocai.base.cloudbase.mapper" />
@@ -148,12 +174,12 @@
       <recent name="com.haocai.order.kafka" />
       <recent name="com.haocai.ticketserver.cloudticketserver.service.impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json\2_7_0" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\resources\json2_7_0" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF" />
-      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketfront\src\main\webapp\WEB-INF\jsp\views" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\mapper" />
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\java\com\haocai\base\cloudbase\entity" />
+      <recent name="D:\projects\HaocaiCloud\cloud-base\src\main\resources\mapper" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-ticketserver\src\main\resources" />
+      <recent name="D:\cq_learn_workspace\SpringCloudBucket\HaocaiCloud\cloud-orderserver\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CloudOrderServerApplication">
@@ -173,6 +199,19 @@
     <configuration name="CloudTicketfrontApplication8200" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.haocai.ticketfront.cloudticketfront.CloudTicketfrontApplication" />
       <module name="cloud-ticketfront" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haocai.order.config.RedisPool" />
+      <module name="cloud-orderserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haocai.order.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,6 +330,7 @@
       <item itemvalue="Application.CloudTicketfrontApplication8200" />
       <item itemvalue="Application.CloudTicketfrontApplication" />
       <item itemvalue="Application.StartUp" />
+      <item itemvalue="Application.RedisPool" />
       <item itemvalue="Maven.generator" />
       <item itemvalue="Spring Boot.CloudEurekaserverApplication" />
       <item itemvalue="Spring Boot.CloudTicketfrontApplication" />
@@ -304,6 +344,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CloudOrderServerApplication" />
+        <item itemvalue="Application.RedisPool" />
         <item itemvalue="Application.CloudTicketfrontApplication" />
         <item itemvalue="Application.StartUp" />
       </list>
@@ -382,7 +423,20 @@
       <workItem from="1610935906963" duration="417000" />
       <workItem from="1610936346504" duration="3519000" />
       <workItem from="1611122721640" duration="4654000" />
-      <workItem from="1611642799045" duration="949000" />
+      <workItem from="1611642799045" duration="1382000" />
+      <workItem from="1611647307041" duration="2518000" />
+      <workItem from="1611716363808" duration="11910000" />
+      <workItem from="1611885262465" duration="3483000" />
+      <workItem from="1611902758767" duration="9594000" />
+      <workItem from="1612148795277" duration="9888000" />
+      <workItem from="1612229556165" duration="1275000" />
+      <workItem from="1613547523897" duration="726000" />
+      <workItem from="1613786517463" duration="1358000" />
+      <workItem from="1613900716084" duration="48000" />
+      <workItem from="1615192664050" duration="3808000" />
+      <workItem from="1615256369827" duration="13055000" />
+      <workItem from="1615425278810" duration="8002000" />
+      <workItem from="1615535144535" duration="4627000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1588075032705</created>
@@ -587,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610936715368</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="spring transaction 传播行为">
+      <created>1611643774537</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611643774537</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,99 +674,103 @@
     <option name="LAST_COMMIT_MESSAGE" value="spring transaction 传播行为" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="42" width="1089" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605165720451">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1615273250398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="42" width="1089" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605165720451" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1605180239971">
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1615273250398" />
+    <state width="490" height="438" key="DebuggerActiveHint" timestamp="1615472643513">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605180239971" />
-    <state x="647" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1605164988794">
+    <state width="490" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1615472643513" />
+    <state width="1493" height="246" key="GridCell.Tab.0.bottom" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="647" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1605164988794" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605166011003">
+    <state width="1493" height="246" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.0.center" timestamp="1615538811144">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605166011003" />
-    <state width="490" height="438" key="DebuggerActiveHint" timestamp="1605685636824">
+    <state width="1493" height="246" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615538811144" />
+    <state width="1493" height="246" key="GridCell.Tab.0.left" timestamp="1615538811144">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="490" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1605685636824" />
-    <state x="697" y="167" key="FileChooserDialogImpl" timestamp="1605165697244">
+    <state width="1493" height="246" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615538811144" />
+    <state width="1493" height="246" key="GridCell.Tab.0.right" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="697" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605165697244" />
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom" timestamp="1606115922716">
+    <state width="1493" height="246" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
-    <state width="1493" height="347" key="GridCell.Tab.0.center" timestamp="1606115922716">
+    <state width="1493" height="246" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.1.center" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
-    <state width="1493" height="347" key="GridCell.Tab.0.left" timestamp="1606115922716">
+    <state width="1493" height="246" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.1.left" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
-    <state width="1493" height="347" key="GridCell.Tab.0.right" timestamp="1606115922716">
+    <state width="1493" height="246" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.1.right" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606115922716" />
-    <state width="1493" height="347" key="GridCell.Tab.1.bottom" timestamp="1606115921986">
+    <state width="1493" height="246" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.2.bottom" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
-    <state width="1493" height="347" key="GridCell.Tab.1.center" timestamp="1606115921986">
+    <state width="1493" height="246" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.2.center" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
-    <state width="1493" height="347" key="GridCell.Tab.1.left" timestamp="1606115921986">
+    <state width="1493" height="246" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.2.left" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
-    <state width="1493" height="347" key="GridCell.Tab.1.right" timestamp="1606115921986">
+    <state width="1493" height="246" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state width="1493" height="246" key="GridCell.Tab.2.right" timestamp="1615538811145">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
-    <state width="1493" height="347" key="GridCell.Tab.2.bottom" timestamp="1606115921987">
+    <state width="1493" height="246" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1615538811145" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1615279177984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
-    <state width="1493" height="347" key="GridCell.Tab.2.center" timestamp="1606115921987">
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615279177984" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611643952786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
-    <state width="1493" height="347" key="GridCell.Tab.2.left" timestamp="1606115921986">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1611643952786" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611906161556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606115921986" />
-    <state width="1493" height="347" key="GridCell.Tab.2.right" timestamp="1606115921987">
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1611906161556" />
+    <state x="289" y="148" width="958" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611908822710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="347" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606115921987" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1603180856298">
+    <state x="289" y="148" width="958" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1611908822710" />
+    <state x="114" y="0" width="1230" height="783" key="dock-window-1" timestamp="1615294762558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603180856298" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610936717563">
+    <state x="114" y="0" width="1230" height="783" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1615294762558" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615472682076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1610936717563" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610936014825">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1610936014825" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605687807146">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605687807146" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615472682076" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cloud-orderserver/src/main/java/com.haocai.order/service/impl/SecondKillOrderServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="res" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="new JedisPoolConfig()" />
       </configuration>
     </watches-manager>
   </component>
